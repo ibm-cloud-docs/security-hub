@@ -9,24 +9,20 @@ toc:
     content-type: solution
     description: Manage the security and compliance of your workloads on IBM Cloud
     label: Security
-
   entries:
   - navgroup:
       id: overview
       topics:
       - what-is.md
       - topic.md
-
   - navgroup:
       id: plan
       topics:
       - responsibilities.md
-
   - navgroup:
       id: architecture
       topics:
       - ../deployable-reference-architectures/stack-ibm-core-security-services/reference-architecture-css.md
-
   - navgroup:
       id: howto
       topics:
@@ -38,7 +34,6 @@ toc:
       - topic: update.md
         navtitle: Updating the architecture version
       - undeploy.md
-  
   - navgroup:
       id: reference
       topics:
@@ -75,21 +70,19 @@ toc:
           - link:
               label: Workload Protection
               href: https://cloud.ibm.com/docs/workload-protection
-
-
   - navgroup:
       id: help
       topics:
-      - support.md
+      - topicgroup:
+          label: Troubleshooting
+          topics:
+          - support.md
+          - ts-sm-trial.md
+          - ts-platform-metrics.md
+          - include: ../secure-enterprise/ts-needs-attention.md
+            navtitle: How do I address a failed validation?
+          - include: ../secure-enterprise/ts-deploy.md
+            navtitle: How do I addresss a failed deployment?
       - faqs.md
       - topic: known-issues.md
         navtitle: Known issues
-      - topicgroup: Troubleshooting
-        topics:
-        - ts-sm-trial.md
-        - ts-platform-metrics.md
-        - include: ../secure-enterprise/ts-needs-attention.md
-          navtitle: How do I address a failed validation?
-        - include: ../secure-enterprise/ts-deploy.md
-          navtitle: How do I addresss a failed deployment?
-
