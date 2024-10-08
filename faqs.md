@@ -4,11 +4,9 @@ copyright:
   years: 2024
 lastupdated: "2024-10-08"
 
-keywords:
+keywords: security services, deployable architecture, IaC
 
-subcollection: security-services
-
-content-type: faq
+subcollection: security-hub
 
 ---
 

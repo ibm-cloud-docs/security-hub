@@ -6,12 +6,11 @@ lastupdated: "2024-10-08"
 
 keywords: security services, deployable architecture, IaC
 
-subcollection: security-services
+subcollection: security-hub
 
 ---
 
 {{site.data.keyword.attribute-definition-list}}
-
 # Deploying the {{site.data.keyword.name-da}} deployable architecture
 {: #deploy-css}
 
