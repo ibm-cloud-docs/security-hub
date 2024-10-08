@@ -1,0 +1,95 @@
+---
+toc:
+  properties:
+    subcollection: security-hub
+    href: /docs/security-hub
+    path: security-hub
+    audience: solution
+    category: solution_docs
+    content-type: solution
+    description: Manage the security and compliance of your workloads on IBM Cloud
+    label: Security
+
+  entries:
+  - navgroup:
+      id: overview
+      topics:
+      - what-is.md
+      - topic.md
+
+  - navgroup:
+      id: plan
+      topics:
+      - responsibilities.md
+
+  - navgroup:
+      id: architecture
+      topics:
+      - ../deployable-reference-architectures/stack-ibm-core-security-services/reference-architecture-css.md
+
+  - navgroup:
+      id: howto
+      topics:
+      - topicgroup:
+          label: Deploying the architecture
+          topics:
+          - deploy.md
+          - customize.md
+      - topic: update.md
+        navtitle: Updating the architecture version
+      - undeploy.md
+  
+  - navgroup:
+      id: reference
+      topics:
+      - topicgroup:
+          label: Standards and compliance
+          topics:
+          - link: 
+              label: IBM compliance programs
+              href: https://www.ibm.com/cloud/compliance
+      - topicgroup:
+          label: Related product guides
+          topics:
+          - link:
+              label: App ID
+              href: https://cloud.ibm.com/docs/appid
+          - link:
+              label: Data Security Broker
+              href: https://cloud.ibm.com/docs/security-broker
+          - link:
+              label: Hyper Protect Crypto Services
+              href: https://cloud.ibm.com/docs/hs-crypto
+          - link:
+              label: Key Protect
+              href: https://cloud.ibm.com/docs/key-protect
+          - link:
+              label: Privileged Access Gateway
+              href: https://cloud.ibm.com/docs/allowlist/privileged-access-gateway
+          - link:
+              label: Secrets Manager
+              href: https://cloud.ibm.com/docs/secrets-manager
+          - link:
+              label: Security and Compliance Center
+              href: https://cloud.ibm.com/docs/security-compliance
+          - link:
+              label: Workload Protection
+              href: https://cloud.ibm.com/docs/workload-protection
+
+
+  - navgroup:
+      id: help
+      topics:
+      - support.md
+      - faqs.md
+      - topic: known-issues.md
+        navtitle: Known issues
+      - topicgroup: Troubleshooting
+        topics:
+        - ts-sm-trial.md
+        - ts-platform-metrics.md
+        - include: ../secure-enterprise/ts-needs-attention.md
+          navtitle: How do I address a failed validation?
+        - include: ../secure-enterprise/ts-deploy.md
+          navtitle: How do I addresss a failed deployment?
+
