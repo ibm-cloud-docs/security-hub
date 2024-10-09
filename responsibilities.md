@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-08"
+lastupdated: "2024-10-09"
 
 keywords: security services, deployable architecture, IaC
 
@@ -69,7 +69,7 @@ Identity and access management includes tasks such as authentication, authorizat
 | Secure with least privilege | Document the minimal IAM access requirements to run the deployable architecture. |  Ensure that the documented IAM access requirements are met. |
 | Manage secrets | | * Generate the necessary secrets (IAM API keys) and configure trusted profiles that are required for the deployable architecture. \n * Manage generated secrets by following secure best practices. |
 {: row-headers}
-{: caption="Table 1. Responsibilities for identity and access management" caption-side="bottom"}
+{: caption="Responsibilities for identity and access management" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 For more information about the general Identity and access management responsibilities when you use deployable architectures, see [Identity and access management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#iam-responsibilities-da).
@@ -88,7 +88,7 @@ Security and regulation compliance includes tasks such as security controls impl
 | Meet security and compliance objectives | Provide a secure deployable architecture that complies with declared standards. For more information about data security, see [How do I know that my data is safe?](/docs/overview?topic=overview-security).
 | Verify configuration changes | | Understand the effects on the security and compliance posture of any user-initiated changes to the default configuration. Run {{site.data.keyword.compliance_long}} checks if needed to ensure that the deployable architecture remains in compliance. |
 {: row-headers}
-{: caption="Table 2. Responsibilities for security and regulation compliance" caption-side="bottom"}
+{: caption="Responsibilities for security and regulation compliance" caption-side="bottom"}
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 For more information about the general Security and regulation compliance responsibilities when you use deployable architectures, see [Security and regulation compliance](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#security-compliance-da).
@@ -111,4 +111,4 @@ Disaster recovery includes tasks such as providing dependencies on disaster reco
 | Ensure availability and recovery of {{site.data.keyword.sysdigsecure_full_notm}} components and data | Recover {{site.data.keyword.sysdigsecure_full_notm}} components in case of disaster. | See [your responsibilities](/docs/workload-protection?topic=workload-protection-shared-responsibilities#disaster-recovery) when using {{site.data.keyword.sysdigsecure_full_notm}}. |
 | Ensure availability and recovery of secrets | | Back up secrets. See [Understanding high availability and disaster recovery](/docs/secrets-manager?topic=secrets-manager-ha-dr) for {{site.data.keyword.secrets-manager_short}}. |
 {: row-headers}
-{: caption="Table 3. Responsibilities for disaster recovery" caption-side="bottom"}
+{: caption="Responsibilities for disaster recovery" caption-side="bottom"}
