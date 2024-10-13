@@ -16,9 +16,13 @@ subcollection: security-hub
 # What is cloud security?
 {: #cloud-security}
 
+SG: Potentially steal some?
 
-Intro sentence here
+With continuous compliance at the core of IBM Cloud®'s platform, your team has all of the tools at your disposal to securely develop, deploy, and manage your regulated, mission-critical enterprise workloads in the cloud.
 
+For highly regulated industries, such as financial services, achieving continuous compliance within a cloud environment is an important first step toward protecting customer and application data. Historically, that process has been difficult and manual, which placed your organization at risk. But, with IBM Cloud you can work with predefined deployable architectures, automate infrastructure-as-code deployments with projects, and integrate automatic security checks into every day workflows to minimize risk.
+
+With IBM Cloud, your whole team from solution architects, compliance managers, infrastructure DevOps teams, to application development teams can use a shift-left approach to identify security risks and exposures early when developing and deploying cloud solutions. This keeps security and compliance at the center of your workflow and organizational culture so that your enterprise can operate in the cloud with confidence. Check out the following video to learn more about how IBM Cloud can help you accelerate and maintain your regulated standards at scale.
 
 ## Introduction to Cloud Security
 {: #cs-video}

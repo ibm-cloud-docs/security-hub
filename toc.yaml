@@ -31,11 +31,16 @@ toc:
           label: Deploying the architecture
           topics:
           - prereqs.md
-          - deploy.md
-          - customize.md
+          - topic: prereqs.md
+            navtitle: Preparing to deploy
+          - topic: deploy.md
+            navtitle: Deploying the architecture
+          - topic: customize.md
+            navtitle: Customizing the architecture
       - topic: update.md
         navtitle: Updating the architecture version
-      - undeploy.md
+      - topic: undeploy.md
+        navtitle: Removing the architecture
   - navgroup:
       id: reference
       topics:
