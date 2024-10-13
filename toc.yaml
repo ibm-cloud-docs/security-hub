@@ -14,10 +14,11 @@ toc:
       id: overview
       topics:
       - what-is.md
-      - topic.md
+      - best-practices.md
   - navgroup:
       id: plan
       topics:
+      - secrets-comparison.md
       - responsibilities.md
   - navgroup:
       id: architecture
@@ -29,6 +30,7 @@ toc:
       - topicgroup:
           label: Deploying the architecture
           topics:
+          - prereqs.md
           - deploy.md
           - customize.md
       - topic: update.md
@@ -56,11 +58,11 @@ toc:
               label: Hyper Protect Crypto Services
               href: https://cloud.ibm.com/docs/hs-crypto
           - link:
+              label: Identity and Access Management
+              href: https://cloud.ibm.com/docs/account
+          - link:
               label: Key Protect
               href: https://cloud.ibm.com/docs/key-protect
-          - link:
-              label: Privileged Access Gateway
-              href: https://cloud.ibm.com/docs/allowlist/privileged-access-gateway
           - link:
               label: Secrets Manager
               href: https://cloud.ibm.com/docs/secrets-manager
