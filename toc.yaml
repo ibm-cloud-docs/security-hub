@@ -55,6 +55,9 @@ toc:
               label: Data Security Broker
               href: https://cloud.ibm.com/docs/security-broker
           - link:
+              label: DevSecOps
+              href: https://cloud.ibm.com/docs/devsecops
+          - link:
               label: Hyper Protect Crypto Services
               href: https://cloud.ibm.com/docs/hs-crypto
           - link:
