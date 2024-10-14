@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-13"
+lastupdated: "2024-10-14"
 
 keywords: security hub, deployable architecture, IaC
 
@@ -12,10 +12,10 @@ subcollection: security-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting help and support for the {[sec-da]}
+# Getting help and support for the Essential Security and Observability Services deployable architecture
 {: #help-support}
 
-If you experience an issue or have questions when you deploy the {[sec-da]}, you can use the following resources before you open a support case.
+If you experience an issue or have questions when you deploy the Essential Security and Observability Services deployable architecture, you can use the following resources before you open a support case.
 {: shortdesc}
 
 

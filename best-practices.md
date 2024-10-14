@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-13"
+lastupdated: "2024-10-14"
 
 keywords: security services, deployable architecture, IaC
 
@@ -15,12 +15,12 @@ subcollection: security-hub
 # Best practices
 {: #best-practices}
 
-As you transition your workloads to {[cloud]}, be sure to keep the following best practices in mind. These best practices around assigning access, managing secrets, and configuring deployments can help ensure that your compliance audits run smoothly.
+As you transition your workloads to {{site.data.keyword.cloud_notm}}, be sure to keep the following best practices in mind. These best practices around assigning access, managing secrets, and configuring deployments can help ensure that your compliance audits run smoothly.
 
 ## Follow the principle of least privilege
 {: #bp-access}
 
-It is always a best practices to assign each user in your account the least amount of access that is required for perform the duties of their role. For example, your organization might have a compliance focal who wants to use {[scc]} to manage the collection of data for compliance audits. For that focal to be able to perform the required tasks in your account, they must have access to the {[scc]}, {[en]}, and {[cos]} services through IAM. If they are managing compliance for an entire enterprise or a specific integration, then additional permissions can be provided.
+It is always a best practices to assign each user in your account the least amount of access that is required for perform the duties of their role. For example, your organization might have a compliance focal who wants to use {{site.data.keyword.compliance_short}} to manage the collection of data for compliance audits. For that focal to be able to perform the required tasks in your account, they must have access to the {{site.data.keyword.compliance_short}}, {{site.data.keyword.en_short}}, and Cloud Object Storage services through IAM. If they are managing compliance for an entire enterprise or a specific integration, then additional permissions can be provided.
 
 Tip: Ensuring the proper configuration of IAM policies is one of the largest factors in reducing the cost of a data breach per the [IBM Cost of Data Breach 2024 report](https://www.ibm.com/reports/data-breach){: external}.
 
@@ -66,10 +66,7 @@ Regardless of which service you are using or what type of secret that you are ro
 ## Run recurring compliance checks
 {: #bp-compliance}
 
-While you can make all of the correct choices the first time that you configure your account, over time additional policies are set, users leave your company, or resources can be updated by users in your account in a way in which leaves you out of compliance. To ensure that your secure account remains a secure account, it is highly recommended that you use {[scc]} or {[wp]} to continuously validate the compliance posture of your account. 
+While you can make all of the correct choices the first time that you configure your account, over time additional policies are set, users leave your company, or resources can be updated by users in your account in a way in which leaves you out of compliance. To ensure that your secure account remains a secure account, it is highly recommended that you use {{site.data.keyword.compliance_short}} or {[wp]} to continuously validate the compliance posture of your account. 
 
 Running an evaluation does not ensure regulatory compliance. An evaluation provides a point in time statement of your current posture for a specific resource. It is your responsibility to review and interpret the results to ensure that your organization is adhering to the controls that are required for your industry. 
 {: important}
-
-
-

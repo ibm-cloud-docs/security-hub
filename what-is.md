@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-13"
+lastupdated: "2024-10-14"
 
 keywords: security services, deployable architecture, IaC
 
@@ -27,7 +27,7 @@ With IBM Cloud, your whole team from solution architects, compliance managers, i
 ## Introduction to Cloud Security
 {: #cs-video}
 
-Check out the following video to see Nataraj Nagantham from {[cloud]} explain the high level concepts of securely running your applications in the cloud. 
+Check out the following video to see Nataraj Nagantham from {{site.data.keyword.cloud_notm}} explain the high level concepts of securely running your applications in the cloud. 
 
 ![Video title](https://www.youtube.com/embed/jI8IKpjiCSM){: video output="iframe" data-script="#cs-video-transcript" id="youtubeplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 

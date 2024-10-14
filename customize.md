@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-13"
+lastupdated: "2024-10-14"
 
 keywords: security services, deployable architecture, IaC
 
@@ -15,7 +15,7 @@ subcollection: security-hub
 # Customizing your deployment
 {: #customize-css}
 
-You can customize the {[sec-da]} in several different ways. The deployable architecture is configured to use specific services, but you are able to edit the configuration, remove specific members, or add members prior to deploying your architecture. Be sure to keep in mind that changing the members of an architecture could potentially change the use case.
+You can customize the Essential Security and Observability Services deployable architecture in several different ways. The deployable architecture is configured to use specific services, but you are able to edit the configuration, remove specific members, or add members prior to deploying your architecture. Be sure to keep in mind that changing the members of an architecture could potentially change the use case.
 {: shortdesc}
 
 ## Editing member configurations
@@ -30,7 +30,7 @@ To edit the member configuration, select **Edit** from the Options icon ![Option
 ## Managing inputs and outputs
 {: #customize-manage-vars}
 
-You can add and remove input and output variables that are available in the {[sec-da]} by following these steps:
+You can add and remove input and output variables that are available in the Essential Security and Observability Services deployable architecture by following these steps:
 
 1.  In your project, click the **Configurations** tab.
 1.  Select a member configuration.
@@ -42,7 +42,7 @@ You can add and remove input and output variables that are available in the {[se
 
 You can remove a member configuration from the stack that other configurations don't depend on.
 
-In the {[sec-da]}, you can remove the configurations for the following services:
+In the Essential Security and Observability Services deployable architecture, you can remove the configurations for the following services:
 
 - {{site.data.keyword.compliance_short}}
 - {{site.data.keyword.secrets-manager_short}}
