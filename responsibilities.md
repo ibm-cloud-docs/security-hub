@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-09"
+lastupdated: "2024-10-14"
 
 keywords: security services, deployable architecture, IaC
 
@@ -12,7 +12,7 @@ subcollection: security-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Understanding your responsibilities when you use the {{site.data.keyword.name-da}} deployable architectures
+# Understanding your responsibilities when you use the Essential Security and Observability Services deployable architecture
 {: #shared-resp}
 
 

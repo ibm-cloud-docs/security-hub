@@ -36,7 +36,6 @@ toc:
       - topicgroup:
           label: Deploying the architecture
           topics:
-          - prereqs.md
           - topic: prereqs.md
             navtitle: Preparing to deploy
           - topic: deploy.md
