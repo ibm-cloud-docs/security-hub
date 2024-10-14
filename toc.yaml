@@ -15,17 +15,11 @@ toc:
       topics:
       - what-is.md
       - best-practices.md
+      - release-notes.md
   - navgroup:
       id: plan
       topics:
       - service-comparison.md
-      - topicgroup:
-          label: Your responsibilities
-          topics:
-          - include: ../../overview/shared-responsibility.md
-            navtitle: Shared responsiblities
-          - topic: responsibilities.md
-            navtitle: Architecture responsibilities
   - navgroup:
       id: architecture
       topics:
@@ -49,6 +43,13 @@ toc:
   - navgroup:
       id: reference
       topics:
+      - topicgroup:
+          label: Your responsibilities
+          topics:
+          - include: ../overview/shared-responsibility.md
+            navtitle: Shared responsiblities
+          - topic: responsibilities.md
+            navtitle: Architecture responsibilities
       - topicgroup:
           label: Standards and compliance
           topics:

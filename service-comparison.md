@@ -10,10 +10,10 @@ subcollection: security-hub
 
 ---
 
-{[metadata-attributes.md]}
+{{site.data.keyword.attribute-definition-list}}
 
 
-# Comparison between {{site.data.keyword.secrets-manager_short}} and related {{site.data.keyword.cloud_notm}} services
+# Which secrets management product should you use?
 {: #manage-secrets-ibm-cloud}
 
 
@@ -68,4 +68,3 @@ Each service supports either a Lite plan or a Trial trial that you can use to tr
 - [{{site.data.keyword.keymanagementserviceshort}}](/catalog/services/key-protect){: external}
 - [{[hp-crypto-short]}](/catalog/services/hs-crypto){: external}
 - [{{site.data.keyword.secrets-manager_short}}](/catalog/services/secrets-manager){: external}
-

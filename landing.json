@@ -35,8 +35,7 @@
       "title": "IBM Cloud compliance programs",
       "description": "Learn more about IBM's compliance standards.",
       "href": "https://www.ibm.com/cloud/compliance",
-      "type": "blog",
-      "recommended": true
+      "type": "blog"
     }
   ],
   "section_architectures": [
@@ -50,4 +49,3 @@
     "view_more": "/docs/security-hub?topic=security-hub-release-notes"
   }
 }
-
