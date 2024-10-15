@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-15"
 
 keywords: security services, deployable architecture, IaC
 
@@ -12,10 +12,10 @@ subcollection: security-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Release notes for the {{site.data.keyword.name-da}} deployable architecture
+# Release notes for the Essential Security and Observability Services deployable architecture
 {: #css-relnotes}
 
-Use these release notes to learn about the latest updates to the {{site.data.keyword.name-da}} deployable architecture. The entries are grouped by date.
+Use these release notes to learn about the latest updates to the Essential Security and Observability Services deployable architecture. The entries are grouped by date.
 {: shortdesc}
 
 
