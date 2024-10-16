@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "title": "IBM Cloud Security",
+  "introduction": "Learn about cloud security, choose the products that are correct for you, and then deploy the core security and supporting services.",
+  "deployment_url": "https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmU%3D",
+  "product_page": "https://www.ibm.com/cloud/security",
+  "console_page": "/security-hub",
+  "section_topics": {
+    "links": [
+      {
+        "title": "What is cloud security?",
+        "href": "/docs/security-hub?topic=security-hub-cloud-security"
+      },
+      {
+        "title": "Best practices",
+        "href": "/docs/security-hub?topic=security-hub-best-practices"
+      },
+      {
+        "title": "Understanding your responsibilities",
+        "href": "/docs/security-hub?topic=security-your-responsibilities"
+      },
+      {
+        "title": "Customizing the deployable architecture",
+        "href": "/docs/security-hub?topic=security-hub-customize-css"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "Cost of a data breach report",
+      "description": "Learn more about how data breaches impacted business in 2024",
+      "href": "https://www.ibm.com/reports/data-breach",
+      "type": "blog"
+    },
+    {
+      "title": "IBM Cloud compliance programs",
+      "description": "Learn more about IBM's compliance standards.",
+      "href": "https://www.ibm.com/cloud/compliance",
+      "type": "blog"
+    }
+  ],
+  "section_architectures": [
+    {
+      "title": "IBM Cloud Essential Security and Observability Services",
+      "href": "/docs/security-hub?topic=security-hub-core-security-services-pattern",
+      "deployable": true
+    }
+  ],
+  "section_updates": {
+    "view_more": "/docs/security-hub?topic=security-hub-release-notes"
+  }
+}
