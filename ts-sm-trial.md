@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-08"
+lastupdated: "2024-10-16"
 
 keywords: security services, deployable architecture, IaC
 
@@ -14,7 +14,7 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why does my {{site.data.keyword.secrets-manager_full_notm}} deployment fail with {{site.data.keyword.name-da}}?
+# Why does my {{site.data.keyword.secrets-manager_short}} deployment fail with Essential Security and Observability Services deployable architecture?
 {: #ts-secrets-mgr-trial}
 {: troubleshoot}
 
