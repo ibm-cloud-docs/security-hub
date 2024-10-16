@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-08"
+lastupdated: "2024-10-16"
 
 keywords: security services, deployable architecture, IaC
 
@@ -30,4 +30,4 @@ To update your configuration, complete the following steps:
 1.  Click **Edit**.
 1.  In the Select inputs section, use the **Version** menu to select the new version of the deployable architecture.
 1.  Click **Save**.
-1.  [Validate and deploy the architecture](/docs/security-services?topic=security-services-deploy-css#deploy-validate).
+1.  [Validate and deploy the architecture](/docs/security-hub?topic=security-hub-deploy-css#deploy-validate).

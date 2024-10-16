@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-16"
 
 keywords: security services, deployable architecture, IaC
 
@@ -22,11 +22,12 @@ As you transition your workloads to {{site.data.keyword.cloud_notm}}, be sure to
 
 It is always a best practices to assign each user in your account the least amount of access that is required for perform the duties of their role. For example, your organization might have a compliance focal who wants to use {{site.data.keyword.compliance_short}} to manage the collection of data for compliance audits. For that focal to be able to perform the required tasks in your account, they must have access to the {{site.data.keyword.compliance_short}}, {{site.data.keyword.en_short}}, and Cloud Object Storage services through IAM. If they are managing compliance for an entire enterprise or a specific integration, then additional permissions can be provided.
 
-Tip: Ensuring the proper configuration of IAM policies is one of the largest factors in reducing the cost of a data breach per the [IBM Cost of Data Breach 2024 report](https://www.ibm.com/reports/data-breach){: external}.
+Ensuring the proper configuration of IAM policies is one of the largest factors in reducing the cost of a data breach per the [IBM Cost of Data Breach 2024 report](https://www.ibm.com/reports/data-breach){: external}.
 
 Depending on the size of your organization, you might be required to manage very different levels of access. It is always a best practice to assign a user in your account the least amount of access required to perform the duties of their role. 
+{: tip}
 
-## Take advantage of groups
+## Take advantage of access groups
 {: #bp-groups}
 
 Through the Identity and Access Management service, you can add the users or resources in your account to access groups based on role or required permissions. By using these groups, you can minimize the number of necessary policies that you need to assign and manage in your account. For example, if you have a team of people all working on the same project that uses the same resources, you can create a group for those users and assign permissions to the group rather than to each individual person. For help getting started, see [Creating access groups](/docs/account?topic=account-groups).
@@ -48,10 +49,8 @@ While multifactor authentication is typically a choice made by each organization
 ## Encrypt the data in your account
 {: #bp-mng-secrets}
 
-Through the use of credentials, keys, or certificates it is important that your data remain secure throughout your account. It is important to think about encryption at every level, whether it's at rest, in motion, or in use. To evaluate about which secrets management tool is best for your organization, see [Which service should I use](link).
+Through the use of credentials, keys, or certificates it is important that your data remain secure throughout your account. It is important to think about encryption at every level, whether it's at rest, in motion, or in use. To evaluate about which secrets management tool is best for your organization, see [Which service should I use](/docs/security-hub?topic=security-hub-manage-secrets-ibm-cloud).
 
-
-SG: Come back w/ topic and link
 
 ## Ensure the proper rotation of secrets
 {: #bp-secret-rotate}
