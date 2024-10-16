@@ -3,6 +3,7 @@
   "title": "IBM Cloud Security",
   "introduction": "Learn about cloud security, choose the products that are correct for you, and then deploy the core security and supporting services.",
   "deployment_url": "https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmU%3D",
+  "product_page": "https://www.ibm.com/cloud/security",
   "console_page": "/security-hub",
   "section_topics": {
     "links": [
