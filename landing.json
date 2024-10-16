@@ -41,7 +41,7 @@
   "section_architectures": [
     {
       "title": "IBM Cloud Essential Security and Observability Services",
-      "href": "/docs/security-services?topic=security-services-core-security-services-pattern",
+      "href": "/docs/security-hub?topic=security-hub-core-security-services-pattern",
       "deployable": true
     }
   ],

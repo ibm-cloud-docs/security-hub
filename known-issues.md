@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-08"
+lastupdated: "2024-10-16"
 
 keywords: security services, deployable architecture, IaC
 
@@ -34,4 +34,4 @@ When you try to undeploy the key management member of the deployable architectur
 ```
 {: screen}
 
-To finish undeploying, wait for about 15 minutes and then retry.
+To finish undeploying, wait 15 minutes and then retry.

@@ -24,7 +24,8 @@ toc:
   - navgroup:
       id: architecture
       topics:
-      - ../deployable-reference-architectures/stack-ibm-core-security-services/reference-architecture-css.md
+      - include: ../deployable-reference-architectures/stack-ibm-core-security-services/reference-architecture-css.md
+        navtitle: Core Security and Observability Services architecture
   - navgroup:
       id: howto
       topics:

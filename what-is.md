@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-16"
 
 keywords: security services, deployable architecture, IaC
 
@@ -16,20 +16,15 @@ subcollection: security-hub
 # What is cloud security?
 {: #cloud-security}
 
-With continuous compliance at the core of IBM Cloud®'s platform, your team has all of the tools at your disposal to securely develop, deploy, and manage your regulated, mission-critical enterprise workloads in the cloud.
-
-For highly regulated industries, such as financial services, achieving continuous compliance within a cloud environment is an important first step toward protecting customer and application data. Historically, that process has been difficult and manual, which placed your organization at risk. But, with IBM Cloud you can work with predefined deployable architectures, automate infrastructure-as-code deployments with projects, and integrate automatic security checks into every day workflows to minimize risk.
 
 
-## Introduction to Cloud Security
-{: #cs-video}
 
-Check out the following video to see Nataraj Nagantham from {{site.data.keyword.cloud_notm}} explain the high level concepts of securely running your applications in the cloud. 
+Check out the following video to see Nataraj Nagaratnam from {{site.data.keyword.cloud_notm}} explain the high level concepts of securely running your applications in the cloud. 
 
 ![Video title](https://www.youtube.com/embed/jI8IKpjiCSM){: video output="iframe" data-script="#cs-video-transcript" id="youtubeplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
 
-### Video transcript
+## Video transcript
 {: #cs-video-transcript}
 {: notoc}
 
@@ -60,105 +55,3 @@ In essence, you are protecting your data, you need to manage access to your apps
 Let's talk about DevOps. DevOps is about development and operations. Traditionally we think about okay, there's an application team that is doing the design and architecture, who are building code, and then you throw it over the wall for the enterprise security team to secure it and manage it. That should be rethought, fundamentally it's not just about Dev and Ops, but security need to be a forethought not an afterthought. So it should become SecDevOps approach to the way you build, manage, and run your applications. So you need to embed security into the entire lifecycle, what we call shift left, not only you manage security but shift left through the entire process you need to have a secure design, so as you plan as you design and say what kind of data am I going to put what level of classification what kind of applications am I building, is it container based, is it a workload that I'm migrating, take that into account and what integrations you need to do so that you can plan it and architect it. Then as you build it embed security as part of that process. So you have security aware applications, for example you may want to encrypt data of your sensitive data, you may want to encrypt the data from your applications before you even you store into a data store. So secure build and you manage security as part of SecDevops as you have secure design and architecture you pass on that and build secure applications and deploy and manage security in a continuous fashion and then you have a closed loop so that whatever you find you may need to remediate or rearchitect your application or implement certain things as threats landscape evolve.
 
 Thanks for watching this video. If you want to see more videos like it please leave a comment below, "like", and subscribe. Thank you.
-
-
-
-
-
-
-
-____________
-
-
-
-
-
-Shared responsibilities between you and the cloud provider
-
-> Rethink based on those roles
-> PaaS - building apps migrating to the cloud and 
-
-  securing the applications, the data, and running them in the cloud
-
-  managing the security and compliance of the platform
-
-
-
-  IaaS
-
-  SaaS 
-    > CP manages everything except the data
-
-
-
-WHAT IS A CLOUD SECURITY
-- shared responsibilty between you and the service provider
-
-- PaaS
-	- Making a program, migrating data and building applications
-	- Responsible: workload, securing application and the data
-	- Cloud provider: security of the application, the network, Runtime
-	- Platform as a service (PaaS) is a cloud computing model in which a third-party provider delivers hardware and software...
-
--IaaS
-	- Infrastructure as a service
-	-Adoption model
-	- a cloud provider hosts the infrastructure components traditionally present in an on-premises data center, 
-	- including servers, storage, and networking hardware, as well as the virtualization or hypervisor layer.
-
-- SaaS
-	- Software as a service (SaaS) is a software distribution model in which a third-party provider hosts applications...
-	
-
-ARCHITECTURE
-- DATA 
-	-confidential data
-	- public data
-	- sensitive data 
-	- Data must have at rest encryption - always data is encrypted
-			- Data at rest
-			- Data at motion
-			- Data in storgae 
-	- You own your data and have complete control
-	- Private keys and public keys overall control over data stored based upon the nature of data present on your server 
-	- You also have greater responsibilty with this model
-	- Control over hardware module in which you have greater control over the encryption and decryption process
-	- Holistic approach 
-			- Bring your own keys
-			- keep your own keys 
-	- Data access is based upon the need
-			- Limiting acccess to data
-			- Application needs
-			- User needs
-	- Apllication Security
-			- ensure the absence of application vunerabilities before releasing the application
-			- Dynamic security
-			- static security
-	- Secure policy = control over data and clever oversight
-	- User Access
-			- who the user is : identity
-			- what servers they are accessing 
-			- Network access -> unauthorized users are blocked from acessing the data 
-					- firewalls
-					- network access control
-					- DDOS protection
-					- Intelligence built into the 	network
-	- Continual surveillance 
-		- Insight 
-		- compliance
-		- threats 
-		- Identifying your posture
-				-> Ability to gain visibility and be able to remediate and in order to maintain control at all times within the system, and take necessary action at all time
-
-DEV OPS 
-- DEVELOPMENT AND OPERATIONS 
-- security a forethought instead of managing security  
-Design
-- secure design
-- Integrating and embedding security as part of the process
-Build 
-- Security build 
-
-Manage Security
-- close loop
-- remediate while recognizing threats
