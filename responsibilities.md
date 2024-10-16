@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-16"
 
 keywords: security services, deployable architecture, IaC
 
@@ -15,52 +15,35 @@ subcollection: security-hub
 # Understanding your responsibilities when you use the Essential Security and Observability Services deployable architecture
 {: #shared-resp}
 
-
-
-Learn about the management responsibilities and terms and conditions that you have when you use one of the {{site.data.keyword.name-da}} deployable architectures.
-{: shortdesc}
+Learn about the management responsibilities and terms and conditions that you have when you use the Essential Security and Observability Services deployable architecture.
+{: shortdesc} 
 
 - For more information about the responsibilities for you and for {{site.data.keyword.IBM}} when you use a deployable architecture, see [Understanding your responsibilities when you use deployable architectures](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures).
 - For a high-level view of the service types in {{site.data.keyword.cloud}} and the breakdown of responsibilities between the customer and {{site.data.keyword.IBM_notm}} for each type, see [Shared responsibilities for using {{site.data.keyword.cloud}} products](/docs/overview?topic=overview-shared-responsibilities).
 - For the overall terms of use, see [{{site.data.keyword.cloud_notm}} Terms and Notices](/docs/overview?topic=overview-terms).
 
 
-
-Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use a {{site.data.keyword.name-da}} deployable architecture.
-
-
-
+Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use a Essential Security and Observability Services deployable architecture
 
 
 ## Incident and operations management
 {: #incident-and-ops}
 
-
-
-
 Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
-The {{site.data.keyword.name-da}} deployable architecture does not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Incident and operations management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#incident-and-ops-da).
+The Essential Security and Observability Services deployable architecturedoes not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Incident and operations management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#incident-and-ops-da).
 
 
 ## Change management
 {: #change-management}
 
-
-
-
-
-
 Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
 
-The {{site.data.keyword.name-da}} deployable architecture does not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Change management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#change-management-da).
+The Essential Security and Observability Services deployable architecturedoes not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Change management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#change-management-da).
 
 
 ## Identity and access management
 {: #iam-responsibilities}
-
-
-
 
 Identity and access management includes tasks such as authentication, authorization, access control policies, and approving, granting, and revoking access.
 
@@ -78,9 +61,6 @@ For more information about the general Identity and access management responsibi
 ## Security and regulation compliance
 {: #security-compliance}
 
-
-
-
 Security and regulation compliance includes tasks such as security controls implementation and compliance certification.
 
 | Task | {{site.data.keyword.IBM_notm}} responsibilities | Your responsibilities |
@@ -95,9 +75,6 @@ For more information about the general Security and regulation compliance respon
 
 ## Disaster recovery
 {: #disaster-recovery}
-
-
-
 
 Disaster recovery includes tasks such as providing dependencies on disaster recovery sites, provision disaster recovery environments, data and configuration backup, replicating data and configuration to the disaster recovery environment, and failover on disaster events.
 

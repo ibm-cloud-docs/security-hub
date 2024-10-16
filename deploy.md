@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-10-16"
 
 keywords: security services, deployable architecture, IaC
 
@@ -21,7 +21,7 @@ To deploy the Essential Security and Observability Services deployable architect
 ## Before you begin
 {: #deploy-before}
 
-Before you get started, be sure that you have completed all of the prerequistes outlined in [Before you begin](/docs/security-hub?topic=security-hub-prereqs).
+Before you get started, be sure that you have completed all of the prerequistes outlined in [Preparing to deploy](/docs/security-hub?topic=security-hub-prereqs).
 
 ## Adding the architecture to a project
 {: #deploy-details-deploy}

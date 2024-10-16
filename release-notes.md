@@ -27,8 +27,8 @@ Use these release notes to learn about the latest updates to the Essential Secur
 {: #css-sep-0624}
 {: release-note}
 
-Version 1.4.1 of the {{site.data.keyword.name-da}} deployable architecture is available
-:   The {{site.data.keyword.name-da}} deployable architecture version 1.4.1 [is released](/catalog#deployable_architecture){: external}.
+Version 1.4.1 of the Essential Security and Observability Services deployable architecture is available
+:   The Essential Security and Observability Services deployable architecture version 1.4.1 [is released](/catalog#deployable_architecture){: external}.
 
     - When you upgrade, all deployable architecture members are updated to their latest versions.
     - Adds the `existing_en_instance_crn` input variable to specify an existing {{site.data.keyword.en_short}} instance.
@@ -62,8 +62,8 @@ Version 1.4.1 of the {{site.data.keyword.name-da}} deployable architecture is av
 {: #css-aug-0124}
 {: release-note}
 
-Version 1.3.1 of the {{site.data.keyword.name-da}} deployable architecture is available
-:   The {{site.data.keyword.name-da}} deployable architecture version 1.3.1 [is released](/catalog#deployable_architecture){: external}.
+Version 1.3.1 of the Essential Security and Observability Services deployable architecture is available
+:   The Essential Security and Observability Services deployable architecture version 1.3.1 [is released](/catalog#deployable_architecture){: external}.
 
     - Updates the {{site.data.keyword.secrets-manager_short}} member deployable architecture to version 1.17.1, which supports the use of `existing_secrets_manager_crn`.
     - Adds a `secret_manager_iam_engine_enabled` input variable to configure credentials for the {{site.data.keyword.secrets-manager_short}} IAM credentials engine. The default value is `false`.
@@ -75,8 +75,8 @@ Version 1.3.1 of the {{site.data.keyword.name-da}} deployable architecture is av
 {: #css-jul-2924}
 {: release-note}
 
-Version 1.2.1 of the {{site.data.keyword.name-da}} deployable architecture is available
-:   The {{site.data.keyword.name-da}} deployable architecture version 1.2.1 [is released](/catalog#deployable_architecture){: external}.
+Version 1.2.1 of the Essential Security and Observability Services deployable architecture is available
+:   The Essential Security and Observability Services deployable architecture version 1.2.1 [is released](/catalog#deployable_architecture){: external}.
 
      - When you upgrade, all deployable architecture members are updated to their latest versions.
      - A new `existing_kms_instance_crn` input variable adds support to use an existing key management service instance. By default, a new {{site.data.keyword.keymanagementserviceshort}} instance is created.
@@ -87,8 +87,8 @@ Version 1.2.1 of the {{site.data.keyword.name-da}} deployable architecture is av
 {: #css-jul-0124}
 {: release-note}
 
-Version 1.1.1 of the {{site.data.keyword.name-da}} deployable architecture is available
-:   The {{site.data.keyword.name-da}} deployable architecture version 1.1.1 [is released](/catalog#deployable_architecture){: external}.
+Version 1.1.1 of the Essential Security and Observability Services deployable architecture is available
+:   The Essential Security and Observability Services deployable architecture version 1.1.1 [is released](/catalog#deployable_architecture){: external}.
 
     - In this version, a {{site.data.keyword.secrets-manager_short}} event notification destination and topic are created in the {{site.data.keyword.en_short}} instance that is created by the deployable architecture. Email subscriptions are also configured for the new destination and topic from the list of emails that is passed in the `en_email_list` input.
     - The attachment that is created by the {{site.data.keyword.compliance_short}} member is updated to use the CIS IBM Cloud Foundations Benchmark v1.1.0 profile because version 1.0.0 is deprecated.
@@ -103,7 +103,7 @@ Version 1.1.1 of the {{site.data.keyword.name-da}} deployable architecture is av
 {: #css-jun-2424}
 {: release-note}
 
-Introducing the {{site.data.keyword.name-da}} deployable architecture
-:   The {{site.data.keyword.name-da}} deployable architecture [is released](/catalog#deployable_architecture){: external}: The deployable architecture deploys the following {{site.data.keyword.name-da}}: {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.compliance_short}}, and {{site.data.keyword.sysdigsecure_full_notm}}. The deployable architecture also deploys {{site.data.keyword.en_short}} and Observability.
+Introducing the Essential Security and Observability Services deployable architecture
+:   The Essential Security and Observability Services deployable architecture [is released](/catalog#deployable_architecture){: external}: The deployable architecture deploys the following {{site.data.keyword.name-da}}: {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.compliance_short}}, and {{site.data.keyword.sysdigsecure_full_notm}}. The deployable architecture also deploys {{site.data.keyword.en_short}} and Observability.
 
     For more information about using deployable architectures with projects, see the blog posts [Projects and Cost Estimation: How IBM Cloud is Revolutionizing Complex Workloads for Enterprises](https://www.ibm.com/blog/announcement/projects-and-cost-estimation/) and [Turn Your Terraform Templates into Deployable Architectures](https://www.ibm.com/blog/turn-your-terraform-templates-into-deployable-architectures/).
