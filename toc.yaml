@@ -95,13 +95,17 @@ toc:
       - topicgroup:
           label: Troubleshooting
           topics:
-          - support.md
-          - ts-sm-trial.md
-          - ts-platform-metrics.md
+          - topic: support.md
+            navtitle: Getting help and support
+          - topic: ts-sm-trial.md
+            navtitle: Why does my Secrets Manager deployment fail?
+          - topic: ts-platform-metrics.md
+            navtitle: Why did my deployment fail during creation of a resource?
           - include: ../secure-enterprise/ts-needs-attention.md
             navtitle: How do I address a failed validation?
           - include: ../secure-enterprise/ts-deploy.md
             navtitle: How do I addresss a failed deployment?
-      - faqs.md
+      - topic: faqs.md
+        navtitle: FAQs
       - topic: known-issues.md
         navtitle: Known issues
