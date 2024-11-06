@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-16"
+lastupdated: "2024-11-06"
 
 keywords: security services, deployable architecture, IaC
 
@@ -18,11 +18,7 @@ subcollection: security-hub
 
 
 
-
-Check out the following video to see Nataraj Nagaratnam from {{site.data.keyword.cloud_notm}} explain the high level concepts of securely running your applications in the cloud. 
-
 ![Video title](https://www.youtube.com/embed/jI8IKpjiCSM){: video output="iframe" data-script="#cs-video-transcript" id="youtubeplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
-
 
 ## Video transcript
 {: #cs-video-transcript}
