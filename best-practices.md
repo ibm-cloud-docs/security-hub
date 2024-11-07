@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-16"
+lastupdated: "2024-11-07"
 
 keywords: security services, deployable architecture, IaC
 
@@ -65,7 +65,7 @@ Regardless of which service you are using or what type of secret that you are ro
 ## Run recurring compliance checks
 {: #bp-compliance}
 
-While you can make all of the correct choices the first time that you configure your account, over time additional policies are set, users leave your company, or resources can be updated by users in your account in a way in which leaves you out of compliance. To ensure that your secure account remains a secure account, it is highly recommended that you use {{site.data.keyword.compliance_short}} or {[wp]} to continuously validate the compliance posture of your account. 
+While you can make all of the correct choices the first time that you configure your account, over time additional policies are set, users leave your company, or resources can be updated by users in your account in a way in which leaves you out of compliance. To ensure that your secure account remains a secure account, it is highly recommended that you use {{site.data.keyword.compliance_short}} or {{site.data.keyword.sysdigsecure_short}} to continuously validate the compliance posture of your account. 
 
 Running an evaluation does not ensure regulatory compliance. An evaluation provides a point in time statement of your current posture for a specific resource. It is your responsibility to review and interpret the results to ensure that your organization is adhering to the controls that are required for your industry. 
 {: important}
