@@ -21,12 +21,11 @@ toc:
       id: plan
       topics:
       - service-comparison.md
-      - overview.md
   - navgroup:
       id: architecture
       topics:
       - include: ../deployable-reference-architectures/stack-ibm-core-security-services/reference-architecture-css.md
-        navtitle: Core Security and Observability Services architecture
+        navtitle: Essential Security and Observability Services
   - navgroup:
       id: howto
       topics:
@@ -50,9 +49,9 @@ toc:
           label: Your responsibilities
           topics:
           - include: ../overview/shared-responsibility.md
-            navtitle: Shared responsiblities
+            navtitle: Responsiblities for IBM Cloud
           - topic: responsibilities.md
-            navtitle: Architecture responsibilities
+            navtitle: Responsibilities for the architecture
       - topicgroup:
           label: Standards and compliance
           topics:
