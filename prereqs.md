@@ -15,7 +15,7 @@ subcollection: security-hub
 # Preparing to deploy the Essential Security and Observability Services deployable architecture
 {: #prereqs}
 
-The Essential Security and Observability Services deployable architecture is a preconfigured set of infrastructure as code assets that are designed to deploy select {{site.data.keyword.cloud_notm}} security services according to best practices. The included security services are crucial for ensuring that you have a robust security and compliance strategy for your applications and data. By leveraging this architecture, you can accelerate your deployment and tailor it to meet your organizations security and compliance requirements.
+The Essential Security and Observability Services deployable architecture is a preconfigured set of infrastructure as code assets that are designed to deploy select {{site.data.keyword.cloud_notm}} security services according to best practices. The included security services are crucial for helping ensure that you have a robust security and compliance strategy for your applications and data. By using this architecture, you can accelerate your deployment and tailor it to meet your organizations security and compliance requirements.
 {: shortdesc}
 
 When you deploy the architecture, you can:
@@ -29,7 +29,7 @@ When you deploy the architecture, you can:
 ## Before you deploy
 {: #before-deploy-prereq}
 
-Before you can deploy the Essential Security and Observability Services deployable architecture, you must have the following prerequistes.
+Before you can deploy the Essential Security and Observability Services deployable architecture, you must have the following prerequisites.
 
 * A Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. 
 
@@ -40,12 +40,12 @@ Before you can deploy the Essential Security and Observability Services deployab
 * An [{{site.data.keyword.cloud_notm}} API Key]((/docs/account?topic=account-userapikey&interface=terraform#create_user_key-api-terra)) in the target account with the suffienct permissions. Be sure to save the API key value for a later configuration.
 
    * **Evaluation environments**: If your environment is used for evaluating, grant the Administrator role on the **IAM Identity Service**, **All Identity and Access enabled services**, **Activity Tracker Event Routing** and **All Account Management** services.
-   * **Production environments**: If your environment is used for production resources, restrict access to the minimum permissions level as indicated in the **Permissions** tab of the details page of the deployable architecture entry in the catalog.
+   * **Production environments**: If your environment is used for production resources, restrict access to the minimum permissions level as indicated in the **Permissions** tab of the details page of the deployable architecture catalog entry.
 
    For more information, see [Using an API key with Secrets Manager to authorize a project to deploy an architecture](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
 
 * Optional: Install the {{site.data.keyword.cloud_notm}} CLI Project plug-in by running the `ibmcloud plugin install project` command. For more information, see the [Project CLI reference](/docs/cli?topic=cli-projects-cli).
 * Optional: Familiarize yourself with the [Customization options](/docs/security-hub?topic=security-hub-customize-css).
 
-You might see notifications in {{site.data.keyword.cloud_notm}} Projects that new versions of a configuration are available. You can ignore these messages because they do not prevent you from deploying the stack. No specific action is required from you. These notifications are expected, as we are rapidly iterating on the development of the underlying components. As new stack versions become available, the versions of the underlying components will also be updated.
+You might see notifications in {{site.data.keyword.cloud_notm}} Projects that new versions of a configuration are available. You can ignore these messages because they do not prevent you from deploying the stack. No specific action is required from you. These notifications are expected, as we are rapidly iterating on the development of the underlying components. As new stack versions become available, the versions of the underlying components are also updated.
 {: tip}

@@ -35,9 +35,9 @@ toc:
           - topic: prereqs.md
             navtitle: Preparing to deploy
           - topic: deploy.md
-            navtitle: Deploying the architecture
+            navtitle: Deploying
           - topic: customize.md
-            navtitle: Customizing the architecture
+            navtitle: Customizing
       - topic: update.md
         navtitle: Updating the architecture version
       - topic: undeploy.md

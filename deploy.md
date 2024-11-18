@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-16"
+lastupdated: "2024-11-18"
 
 keywords: security services, deployable architecture, IaC
 
@@ -21,7 +21,7 @@ To deploy the Essential Security and Observability Services deployable architect
 ## Before you begin
 {: #deploy-before}
 
-Before you get started, be sure that you have completed all of the prerequistes outlined in [Preparing to deploy](/docs/security-hub?topic=security-hub-prereqs).
+Before you get started, be sure that you complete all of the prerequisites that are outlined in [Preparing to deploy](/docs/security-hub?topic=security-hub-prereqs).
 
 ## Adding the architecture to a project
 {: #deploy-details-deploy}
@@ -33,7 +33,7 @@ To deploy an architecture, you must add it to a project.
 1. In the **Architecture** section, choose the latest product version.
 1. Click **review deployment options**.
 1. In the **Deployment options** section, select **Add to project**. Then, click **Add to project**.
-1. Give your project a name, enter a descriptoin, and specify a configuration name.
+1. Give your project a name, enter a description, and specify a configuration name.
 1. Click **Create**.
 
 
@@ -42,18 +42,18 @@ To deploy an architecture, you must add it to a project.
 
 To create a configuration, set your variables.
 
-1. In the **Configure > Security** add the API that you previously identified as part of the prerequistes to select the authentication method that will be used to deploy your architecture.
+1. In the **Configure > Security** add the API that you previously identified as part of the prerequisite to select the authentication method that is used to deploy your architecture.
 1. In the **Configure > Security** > **Authentication** tab select the API key.
 1. On the **Required** tab, enter the values for the following required fields.
    * Enter a prefix. A prefix is added to the beginning of the name of most of the resources that are created by the deployable architecture. The prefix helps to make sure that the resource names are unique and it helps to avoid naming clashes with other resources in the same account.
-   * Select the region in which you want the resources created.
+   * Select the region in which you want the resources that are created.
    * Provide the name of a resource group.
 1. On the **Optional** tab, enter the values for the optional fields.
    * Select the pricing plans for {{site.data.keyword.secrets-manager_short}} and {{site.data.keyword.compliance_short}}. While these fields are optional, they are required if you are building the sample app.
 1. Click **Save**. After the input values are validated, the button changes to **View stack configurations**.
 
 
-## Validating and deploy the architecture
+## Validating and deploying the architecture
 {: #deploy-validate}
 
 You can deploy a stacked deployable architecture in two ways:

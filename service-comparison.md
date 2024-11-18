@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020, 2024
-lastupdated: "2024-10-15"
+lastupdated: "2024-11-18"
 
 keywords: secrets management in IBM Cloud, differences between {{site.data.keyword.secrets-manager_short}} and Key Protect, when to use {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.secrets-manager_short}} use cases, single tenant, multi-tenant
 
@@ -24,7 +24,7 @@ For example, consider the following scenarios and how they map to secrets manage
 
 ![The image describes three use cases for secrets management and how they map to available services in {{site.data.keyword.cloud_notm}}. The content is explained fully in the surrounding text.](/images/secrets-mgmt-options.svg){: caption="Figure 1. Secrets management use cases" caption-side="bottom"}
 
-## Which data protection service is best for me?
+## Which data protection service is best for you?
 {: #which-data-protection-service}
 
 The following table lists the different offerings that you can use with {{site.data.keyword.cloud_notm}} to protect your application secrets.
@@ -32,13 +32,13 @@ The following table lists the different offerings that you can use with {{site.d
 | Scenario | What to use |
 | --- | --- |
 | As a DevOps team contributor, you need to create, lease, and manage API keys, credentials, database configurations, and other secrets for your services and applications. | With **[{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager)**, you can manage secrets of various types in a dedicated instance. |
-| You need to generate, renew, and manage SSL/TLS certificates for your deployments. | You can also manage your SSL/TLS certificates and private keys in dedicated instance of **[{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager)**. |
+| You need to generate, renew, and manage SSL/TLS certificates for your deployments. | You can also manage your SSL/TLS certificates and private keys in a dedicated instance of **[{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager)**. |
 | You need to create and manage encryption keys that are backed by FIPS 140-2 Level 3 validated hardware. | You can use **[{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect)** to generate and import encryption keys by using a multi-tenant service with shared hardware. |
 | You are an admin in an industry, such as finance or legal, that must adhere to governance over how data is protected and isolated. You need to create and manage encryption keys by using a dedicated, FIPS 140-2 Level 4 hardware security module that you control and manage. | With **[{{site.data.keyword.hscrypto}}](/docs/hs-crypto)**, you can manage encryption keys in a single-tenant service with dedicated hardware. |
 | You need a way to offload TLS handshake encryption to a dedicated, FIPS 140-2 Level 4 hardware security module that you control and manage. | You can also use **[{{site.data.keyword.hscrypto}}](/docs/hs-crypto)** to control your TLS/SSL keys in a dedicated HSM. |
 {: caption="Data protection scenarios" caption-side="top"}
 
-## What are key secret types supported by each data protection service?
+## What are the key secret types supported by each data protection service?
 {: #key-features}
 
 As you plan your data protection strategy, some differences between services to consider include the level of data isolation that your workload requires, and the secret types that you can use.
@@ -50,7 +50,7 @@ For a higher level of security and control, your business might benefit from the
 | **{{site.data.keyword.secrets-manager_short}}** | Arbitrary secrets  \n IAM credentials  \n Service credentials \n Key-value secrets  \n SSL/TLS certificates  \n User credentials | | ![Checkmark icon](../../icons/checkmark-icon.svg)| |
 | **{{site.data.keyword.keymanagementserviceshort}}** | Symmetric encryption keys | ![Checkmark icon](../../icons/checkmark-icon.svg)| | ![Checkmark icon](../../icons/checkmark-icon.svg) | |
 | **{{site.data.keyword.hscrypto}}** | Symmetric and asymmetric encryption keys | |![Checkmark icon](../../icons/checkmark-icon.svg) | ![Checkmark icon](../../icons/checkmark-icon.svg) |
-{: caption="Table 2. Key features for {{site.data.keyword.cloud_notm}} data protection services" caption-side="top"}
+{: caption="Key features for {{site.data.keyword.cloud_notm}} data protection services" caption-side="top"}
 {: summary="The table compares features across {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.cloudcerts_short}}, {{site.data.keyword.keymanagementserviceshort}}, and {{site.data.keyword.hscrypto}}. The first column lists the names of the services. The second column lists the types of secrets that are supported by each service. The third column uses checkmarks to indicate whether a service is multi-tenant. The fourth column uses checkmarks to indicate whether a service is single-tenant. The last column uses checkmarks to indicate whether a service is backed by a hardware security module (HSM)."}
 {: class="comparison-table"}
 

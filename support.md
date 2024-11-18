@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-11-18"
 
 keywords: security hub, deployable architecture, IaC
 
@@ -31,7 +31,7 @@ If you are unable to resolve the issue, open a support case. For more informatio
 ## Providing support case details
 {: #support-case-details}
 
-To ensure that your case has a timely resolution, please include the information found in the the logs from your failed deployment so that we can begin investigating your case. To provide the logs, use the following steps.
+To ensure that your case has a timely resolution, be sure to include the information found in the logs from your failed deployment so that we can begin investigating your case. To provide the logs, use the following steps.
 
 1. In your project, go to the **Needs attention** widget on the **Overview** tab. Then, click the message to view more information about the issue.
 1. Provide the member configuration name, source URL, source release, and folder from the {{site.data.keyword.bpshort}} log. It should look similar to the following example. 
