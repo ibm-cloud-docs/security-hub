@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-16"
+lastupdated: "2024-11-21"
 
 keywords: security services, deployable architecture, IaC
 
@@ -21,7 +21,7 @@ content-type: troubleshoot
 Your deployment of {{site.data.keyword.secrets-manager_short}} failed.
 {: shortdesc}
 
-You attempted to deploy the {{site.data.keyword.secrets-manager_short}} member of the {{site.data.keyword.name-da}} deployable architecture, but it failed.
+You attempted to deploy the {{site.data.keyword.secrets-manager_short}} member of the Essential Security and Observability Services deployable architecture deployable architecture, but it failed.
 {: tsSymptoms}
 
 An error displays in the {{site.data.keyword.secrets-manager_short}} deployment step if a Trial instance is already deployed in the same account.
