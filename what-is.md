@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-11-18"
+lastupdated: "2024-11-21"
 
 keywords: security services, deployable architecture, IaC
 
@@ -16,7 +16,12 @@ subcollection: security-hub
 # What is cloud security?
 {: #cloud-security}
 
+At its core, cloud security is the collection of procedures and technology that is designed to address the potential threats that your organization might face as you include cloud-based tools and services as part of your infrastructure.
+{: shortdesc}
 
+Historically, security and compliance strategies have been time intensive and manual because when you deploy an application, you must manage the entire data center and servers, as well as the applications and data. In a cloud model, it's a shared responsibility between you and the cloud provider. As you get started on your journey to cloud, you must rethink your security architecture and fully understand what is your responsibility and what is the cloud providers.
+
+Check out the following video to learn more about securely running your applications in the cloud.
 
 ![Video title](https://www.youtube.com/embed/jI8IKpjiCSM){: video output="iframe" data-script="#cs-video-transcript" id="youtubeplayer" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen}
 
@@ -51,3 +56,30 @@ In essence, if you are protecting your data, you need to manage access to your a
 Let's talk about DevOps. DevOps is about development and operations. Traditionally we think about okay, there's an application team that is doing the design and architecture, who are building the code, and then you throw it over the wall for the enterprise security team to secure it and manage it. That should be rethought, fundamentally it's not just about Dev and Ops, but security need to be a forethought not an afterthought. So it should become a SecDevOps approach to the way you build, manage, and run your applications. So you need to embed security into the entire lifecycle, what we call shift left, not only you manage security but shift left through the entire process you need to have a secure design, so as you plan as you design and say what kind of data am I going to put what level of classification what kind of applications am I building, is it container-based, is it a workload that I'm migrating, take that into account and what integrations you need to do so that you can plan it and architect it. Then, as you build it embed security as part of that process. So you have security aware applications, for example you might want to encrypt data of your sensitive data, you might want to encrypt the data from your applications before you even you store into a data store. So secure build and you manage security as part of SecDevops as you have secure design and architecture you pass on that and build secure applications and deploy and manage security in a continuous fashion and then you have a closed loop so that whatever you find you might need to remediate or rearchitect your application or implement certain things as threats landscape evolve.
 
 Thanks for watching this video. If you want to see more videos like it leave a comment, "like", and subscribe. Thank you.
+
+
+## Understanding responsibilities
+{: #responsibilities}
+
+As explained in the previous video, cloud security responsibilities are highly dependent upon the type of cloud computing model that you're working with. See the following table to learn more.
+
+| Computing model | Description |
+|------|-------------------------------------------------|
+| Infrastructure-as-a-Service (IaaS) | Offers a hybrid approach, which allows organizations to manage some of their data and applications on-premises. At the same time, it relies on cloud providers to manage servers, hardware, networking, virtualization, and storage needs.|
+| Platform-as-a-Service (PaaS) | Gives organizations the ability to streamline their application development and delivery. It does so by providing a custom application framework that automatically manages operating systems, software updates, storage, and supporting infrastructure in the cloud. |
+| Software-as-a-Service (SaaS) | Provides cloud-based software hosted online and typically available on a subscription basis. Third-party providers manage all potential technical issues, such as data, middleware, servers, and storage. This setup helps minimize IT resource expenditures and streamline maintenance and support functions. |
+{: row-headers}
+{: caption="Responsibility by computing model" caption-side="bottom"}
+{: summary="The rows are read from left to right. The first column describes the type of service being provided. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
+
+
+To learn more about the responsibilities by task, see [{{site.data.keyword.cloud_notm}} responsibilities](/docs/security-hub?topic=security-hub-shared-responsibilities). Additionally, if there are differences for a specific service, it is documented in that service documentation in a responsibilities topic.
+{: tip}
+
+
+## Understanding the challenges
+{: #challenges}
+
+While cloud security can never guarantee complete prevention of attacks and vulnerabilities, a well-designed strategy can go a long way toward preventing breaches or mitigating damage, improving compliance, and building stronger customer trust. It's important to recognize and understand the challenges that your organization might face as you work in a cloud environment. 
+
+Two of the most important challenges to consider as you build your strategy are misconfiguration and compliance. Each year, misconfigurations within a cloud environment contribute to a high number of data breaches and can force your otherwise secure architecture out of compliance. But, with {{site.data.keyword.cloud_notm}}, you can work with predefined deployable architectures that help to automate infrastructure-as-code deployments and integrate security checks into everyday workflows to standardize and validate configurations across your environments, which can minimize your risk. 
