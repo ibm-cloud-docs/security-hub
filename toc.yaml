@@ -21,12 +21,11 @@ toc:
       id: plan
       topics:
       - service-comparison.md
-      - overview.md
   - navgroup:
       id: architecture
       topics:
       - include: ../deployable-reference-architectures/stack-ibm-core-security-services/reference-architecture-css.md
-        navtitle: Core Security and Observability Services architecture
+        navtitle: Essential Security and Observability Services
   - navgroup:
       id: howto
       topics:
@@ -36,9 +35,9 @@ toc:
           - topic: prereqs.md
             navtitle: Preparing to deploy
           - topic: deploy.md
-            navtitle: Deploying the architecture
+            navtitle: Deploying
           - topic: customize.md
-            navtitle: Customizing the architecture
+            navtitle: Customizing
       - topic: update.md
         navtitle: Updating the architecture version
       - topic: undeploy.md
@@ -50,9 +49,9 @@ toc:
           label: Your responsibilities
           topics:
           - include: ../overview/shared-responsibility.md
-            navtitle: Shared responsiblities
+            navtitle: Responsiblities for IBM Cloud
           - topic: responsibilities.md
-            navtitle: Architecture responsibilities
+            navtitle: Responsibilities for the architecture
       - topicgroup:
           label: Standards and compliance
           topics:
@@ -95,13 +94,17 @@ toc:
       - topicgroup:
           label: Troubleshooting
           topics:
-          - support.md
-          - ts-sm-trial.md
-          - ts-platform-metrics.md
+          - topic: support.md
+            navtitle: Getting help and support
+          - topic: ts-sm-trial.md
+            navtitle: Why does my Secrets Manager deployment fail?
+          - topic: ts-platform-metrics.md
+            navtitle: Why did my deployment fail during creation of a resource?
           - include: ../secure-enterprise/ts-needs-attention.md
             navtitle: How do I address a failed validation?
           - include: ../secure-enterprise/ts-deploy.md
             navtitle: How do I addresss a failed deployment?
-      - faqs.md
+      - topic: faqs.md
+        navtitle: FAQs
       - topic: known-issues.md
         navtitle: Known issues

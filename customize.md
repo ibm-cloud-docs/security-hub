@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-14"
+lastupdated: "2024-11-18"
 
 keywords: security services, deployable architecture, IaC
 
@@ -15,13 +15,13 @@ subcollection: security-hub
 # Customizing your deployment
 {: #customize-css}
 
-You can customize the Essential Security and Observability Services deployable architecture in several different ways. The deployable architecture is configured to use specific services, but you are able to edit the configuration, remove specific members, or add members prior to deploying your architecture. Be sure to keep in mind that changing the members of an architecture could potentially change the use case.
+You can customize the Essential Security and Observability Services deployable architecture in several different ways. The deployable architecture is configured to use specific services, but you are able to edit the configuration, remove specific members, or add members before deploying your architecture. Be sure to keep in mind that changing the members of an architecture might potentially change the use case.
 {: shortdesc}
 
 ## Editing member configurations
 {: #customize-edit-config}
 
-Each member in the deployable architecture stack includes several input parameters that can be customized to your specific use case. To change the default value, you can edit the configuration. For example, you can determine whether the endpoint type is private or public. You can choose to reuse existing keys that you already have in {{site.data.keyword.keymanagementserviceshort}}. Or, you might fine tune the parameters of some of the other services. 
+Each member in the deployable architecture stack includes several input parameters that can be customized to your specific use case. To change the default value, you can edit the configuration. For example, you can determine whether the endpoint type is private or public. You can choose to reuse existing keys that you already have in {{site.data.keyword.keymanagementserviceshort}}. Or, you might fine-tune the parameters of some of the other services. 
 
 To edit the member configuration, select **Edit** from the Options icon ![Options icon](../icons/action-menu-icon.svg "Options") in the member configuration row of your project.
 
