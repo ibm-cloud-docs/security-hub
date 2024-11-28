@@ -44,7 +44,7 @@ Version 2.0.0 of the Essential Security and Observability Services deployable ar
 {: #security-services-date-for-update-oct-1124}
 {: release-note}
 
-Version 1.5.0 of the {{site.data.keyword.name-da}} deployable architecture is available
+Version 1.5.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
 :   The Essential Security and Observability Services deployable architecture deployable architecture version 1.5.0 [is released](/catalog#deployable_architecture){: external}.
 
     - When you upgrade, all deployable architecture stack members are updated to their latest versions.
