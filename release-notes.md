@@ -20,6 +20,21 @@ Use these release notes to learn about the latest updates to the Essential Secur
 
 ## November 2024
 {: #security-services-date-for-update-2024-11}
+{: release-note}
+
+### 18 November 2024
+{: #security-services-date-for-update-nov-1824}
+{: release-note}
+
+Version 2.1.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
+:   The Essential Security and Observability Services deployable architecture deployable architecture version 2.1.0 [is released](/catalog#deployable_architecture){: external}.
+
+    If you are upgrading from an older version, ensure that you only proceed to upgrade from version 1.5.0 or later. If you attempt to upgrade from an older version, the Observability member will fail as you cannot disable Log Analysis log archiving and delete an IBM Log Analysis instance as part of the same deployment. {: note}
+
+    - When you upgrade, all deployable architecture stack members are updated to their latest versions.
+    - A fix was added to the {{site.data.keyword.compliance_short}} deployable architecture to fix a backend change which was causing the below error to occur when configuing integration with {{site.data.keyword.name-da}}:
+        `error Error setting event_notifications: Invalid address to set: []string{"event_notifications", "0", "source_description"}`
+    - All of the deployable architecture stack members (with the exception of the Observability member due to this [provider bug](https://github.com/IBM-Cloud/terraform-provider-ibm/issues/5824)), will now use the IBM Cloud regional private endpoint or global private endpoint by default. The regional private endpoint is given higher precedence. In order to use the private endpoint from an IBM Cloud resource, one must have a [VRF-enabled](https://cloud.ibm.com/docs/account?topic=account-vrf-service-endpoint&interface=ui) account. This can be overriden and set back to public by editing each of the deployable architecture stack members and changing the value of the `provider_visibility` input.
 
 ### 4 November 2024
 {: #security-services-date-for-update-nov-0424}
