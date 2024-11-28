@@ -25,10 +25,10 @@ Use these release notes to learn about the latest updates to the Essential Secur
 {: #security-services-date-for-update-nov-0424}
 {: release-note}
 
-Version 2.0.0 of the {{site.data.keyword.name-da}} deployable architecture is available
-:   The {{site.data.keyword.name-da}} deployable architecture version 2.0.0 [is released](/catalog#deployable_architecture){: external}.
+Version 2.0.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
+:   The Essential Security and Observability Services deployable architecture deployable architecture version 2.0.0 [is released](/catalog#deployable_architecture){: external}.
 
-If you are upgrading from an older version, ensure that you only proceed to upgrade from version 1.5.0. If you attempt to upgrade from an older version, the Observability member will fail as you cannot disable Log Analysis log archiving and delete an IBM Log Analysis instance as part of the same deployment. {: note}
+    If you are upgrading from an older version, ensure that you only proceed to upgrade from version 1.5.0. If you attempt to upgrade from an older version, the Observability member will fail as you cannot disable Log Analysis log archiving and delete an IBM Log Analysis instance as part of the same deployment. {: note}
 
     - IBM Log Analysis is now fully removed from the solution. Upgrading to this version will destroy the IBM Log Analysis instance that was provisioned with older versions. IBM Cloud Logs should now be used for managing logs. Support for Cloud Logs was added in version 1.5.0.
     - IBM Cloud Logs is now configured with Event Notifications by default.
@@ -45,7 +45,7 @@ If you are upgrading from an older version, ensure that you only proceed to upgr
 {: release-note}
 
 Version 1.5.0 of the {{site.data.keyword.name-da}} deployable architecture is available
-:   The {{site.data.keyword.name-da}} deployable architecture version 1.5.0 [is released](/catalog#deployable_architecture){: external}.
+:   The Essential Security and Observability Services deployable architecture deployable architecture version 1.5.0 [is released](/catalog#deployable_architecture){: external}.
 
     - When you upgrade, all deployable architecture stack members are updated to their latest versions.
     - The Observability deployable architecture will now deploy both IBM Cloud Logs and IBM Cloud Log Analysis. As IBM Cloud Log Analysis is now a deprecated service, which is replaced by IBM Cloud Logs, Log Analysis log archiving is now disabled which is required before the Log Analysis instance can be deleted.
