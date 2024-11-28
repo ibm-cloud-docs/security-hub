@@ -12,7 +12,7 @@ subcollection: security-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Known issues with Essential Security and Observability Services deployable architecture deployable architectures
+# Known issues with Essential Security and Observability Services deployable architecture
 {: #known-issues}
 
 Because issues change frequently, check this list regularly.
