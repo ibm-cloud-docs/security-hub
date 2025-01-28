@@ -105,6 +105,6 @@ toc:
           - include: ../secure-enterprise/ts-deploy.md
             navtitle: How do I addresss a failed deployment?
       - topic: faqs.md
-        navtitle: FAQs
+        navtitle: FAQ
       - topic: known-issues.md
         navtitle: Known issues
