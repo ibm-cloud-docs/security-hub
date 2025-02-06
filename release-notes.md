@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-11-28"
+lastupdated: "2025-02-06"
 
 keywords: security services, deployable architecture, IaC
 
@@ -78,7 +78,7 @@ Version 1.5.0 of the Essential Security and Observability Services deployable ar
         1.  Click the **Optional** tab in the **Configure** section.
         1.  Find the **manage_log_archive_cos_bucket** input variable and change the value to `true`.
         1.  Click **Save**.
-        1.  Follow the steps in [Step 3. Validate and deploy the architecture](/docs/security-services?topic=security-services-deploy-css#deploy-validate) to validate and deploy all deployable architectures in the stack.
+        1.  Follow the steps in [Step 3. Validate and deploy the architecture](/docs/security-hub?topic=security-hub-deploy-css#deploy-validate) to validate and deploy all deployable architectures in the stack.
 
     - In version 2.0.0, Log Analysis will be full removed, however if you wan't to delete your Log Analysis instance before then, you can follow the below steps, but only after version 1.5.0 has been fully deployed:
 
@@ -164,7 +164,7 @@ Version 1.1.1 of the Essential Security and Observability Services deployable ar
     - In this version, a {{site.data.keyword.secrets-manager_short}} event notification destination and topic are created in the {{site.data.keyword.en_short}} instance that is created by the deployable architecture. Email subscriptions are also configured for the new destination and topic from the list of emails that is passed in the `en_email_list` input.
     - The attachment that is created by the {{site.data.keyword.compliance_short}} member is updated to use the CIS IBM Cloud Foundations Benchmark v1.1.0 profile because version 1.0.0 is deprecated.
 
-        You must update the profile attachment input value in the `4a - Security and Compliance Center` member configuration to `CIS IBM Cloud Foundations Benchmark v1.1.0` when you update. For more information, see [Updating to version 1.1.1](/docs/security-services?topic=security-services-known-issues#ki-update-profile) in Known issues.
+        You must update the profile attachment input value in the `4a - Security and Compliance Center` member configuration to `CIS IBM Cloud Foundations Benchmark v1.1.0` when you update.
         {: important}
 
 ## June 2024
@@ -177,4 +177,4 @@ Version 1.1.1 of the Essential Security and Observability Services deployable ar
 Introducing the Essential Security and Observability Services deployable architecture
 :   The Essential Security and Observability Services deployable architecture [is released](/catalog#deployable_architecture){: external}: The deployable architecture deploys the following: {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.compliance_short}}, and {{site.data.keyword.sysdigsecure_full_notm}}. The deployable architecture also deploys {{site.data.keyword.en_short}} and Observability.
 
-    For more information about using deployable architectures with projects, see the blog posts [Projects and Cost Estimation: How IBM Cloud is Revolutionizing Complex Workloads for Enterprises](https://www.ibm.com/blog/announcement/projects-and-cost-estimation/) and [Turn Your Terraform Templates into Deployable Architectures](https://www.ibm.com/blog/turn-your-terraform-templates-into-deployable-architectures/).
+    For more information about using deployable architectures with projects, see the blog posts [Projects and Cost Estimation: How IBM Cloud is Revolutionizing Complex Workloads for Enterprises](https://www.ibm.com/new/announcements/projects-and-cost-estimation) and [Turn Your Terraform Templates into Deployable Architectures](https://www.ibm.com/think/insights/turn-your-terraform-templates-into-deployable-architectures).
