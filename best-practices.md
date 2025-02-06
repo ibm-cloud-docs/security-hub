@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-11-18"
+lastupdated: "2025-02-06"
 
 keywords: security services, deployable architecture, IaC
 
@@ -22,7 +22,7 @@ As you transition your workloads to {{site.data.keyword.cloud_notm}}, be sure to
 
 It is always a best practice to assign each user in your account the least amount of access that is required for them to perform the duties of their role. For example, your organization might have a compliance-focal who wants to use {{site.data.keyword.compliance_short}} to manage the collection of data for compliance audits. For the focal to be able to perform the required tasks in your account, they must have access to the {{site.data.keyword.compliance_short}}, {{site.data.keyword.en_short}}, and Cloud Object Storage services through IAM. If they are managing compliance for an entire enterprise or a specific integration, then more permissions can be provided.
 
-Helping ensure the proper configuration of IAM policies is one of the largest factors in reducing the cost of a data breach per the [IBM Cost of Data Breach 2024 report](https://www.ibm.com/reports/data-breach){: external}.
+Helping ensure the proper configuration of IAM policies is one of the greatest factors in reducing the cost of a data breach per the [IBM Cost of Data Breach 2024 report](https://www.ibm.com/reports/data-breach){: external}.
 
 
 ## Take advantage of access groups

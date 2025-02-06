@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-01-28"
+lastupdated: "2025-02-06"
 
 keywords: security services, deployable architecture, IaC
 
@@ -22,7 +22,7 @@ FAQ for the Essential Security and Observability Services deployable architectur
 {: #what-is-da}
 {: faq}
 
-A deployable architecture is a combination of capabilities from one or more technologies that solve a customer-defined problem, and it can have one or more reference architectures based on the customer business needs. For more information about deployable architectures, see [What are modules and deployable architectures?](/docs/secure-enterprise?topic=secure-enterprise-understand-module-da) and read about [infrastructure architectures](/docs/overview?topic=overview-secure-enterprise#define-architecture) in "Running secure enterprise workloads on IBM Cloud".
+A deployable architecture is a combination of capabilities from one or more technologies that solve a customer-defined problem, and it can have one or more reference architectures based on the customer business needs. For more information about deployable architectures, see [What are modules and deployable architectures?](/docs/secure-enterprise?topic=secure-enterprise-understand-module-da) and read about infrastructure architectures in [Running secure enterprise workloads on IBM Cloud](/docs/overview?topic=overview-secure-enterprise#define-architecture).
 
 ## What is infrastructure as code?
 {: #what-is-iac}
