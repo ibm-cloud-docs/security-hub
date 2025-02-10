@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-02-06"
+lastupdated: "2025-02-10"
 
 keywords: security services, deployable architecture, IaC
 
@@ -124,7 +124,7 @@ Version 1.4.1 of the Essential Security and Observability Services deployable ar
             {: codeblock}
 
         1.  Click **Save**.
-        1.  Follow the steps in [Step 3. Validate and deploy the architecture](/docs/security-services?topic=security-services-deploy-css#deploy-validate) to validate and deploy the updated deployable architecture.
+        1.  Follow the steps in [Step 3. Validate and deploy the architecture](/docs/security-hub?topic=security-hub-deploy-css#deploy-validate) to validate and deploy the updated deployable architecture.
 
 ## August 2024
 {: #css-2024-08}

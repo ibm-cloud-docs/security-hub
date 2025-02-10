@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-02-06"
+lastupdated: "2025-02-10"
 
 keywords: security services, deployable architecture, IaC
 
@@ -30,7 +30,7 @@ Helping ensure the proper configuration of IAM policies is one of the greatest f
 
 Through the Identity and Access Management service, you can add the users or resources in your account to access groups based on role or required permissions. By using these groups, you can minimize the number of necessary policies that you need to assign and manage in your account. For example, if your team project uses the same resources, you can create a group and assign permissions to the group rather than to each individual. For help with getting started, see [Creating access groups](/docs/account?topic=account-groups).
 
-Does a user need this permission for a short time period? It might be better practice to use a trusted profile. [Learn more](/docs/secure-enterprise?topic=secure-enterprise-access-enterprises#bp-enterprise-access-include-compare-accessgroups-trustedprofiles).
+Does a user need this permission for a short time period? It might be better practice to use a trusted profile. [Learn more](/docs/enterprise-management?topic=enterprise-management-access-enterprises#bp-enterprise-access-include-compare-accessgroups-trustedprofiles).
 {: tip}
 
 ## Tag your resources
