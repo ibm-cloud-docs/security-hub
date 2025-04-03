@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-02-06"
+lastupdated: "2025-02-10"
 
 keywords: security hub, deployable architecture, IaC
 
@@ -25,7 +25,7 @@ If you experience an issue or have questions when you deploy the Essential Secur
 - ![GitHub icon](../icons/logo-github-16.svg "GitHub icon") Review the [GitHub issues](https://github.com/terraform-ibm-modules/stack-ibm-core-security-services/issues){: external} to see whether other users experienced the same problem.
 
 
-If you are unable to resolve the issue, open a support case. For more information, see [Creating support cases](/docs/get-support?topic=get-support-open-case). If you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
+If you are unable to resolve the issue, open a support case. For more information, see [Creating support cases](/docs/account?topic=account-open-case). If you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
 
 
 ## Providing support case details
