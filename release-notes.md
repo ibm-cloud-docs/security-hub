@@ -1,8 +1,8 @@
----
+![image](https://github.ibm.com/cloud-docs-solutions/security-hub/assets/42199/66dae2d6-d057-4f10-9a60-a077de83a577)![image](https://github.ibm.com/cloud-docs-solutions/security-hub/assets/42199/b39f68ce-a90e-4bc1-83a1-55b230f78ffa)---
 
 copyright:
   years: 2024
-lastupdated: "2025-02-10"
+lastupdated: "2025-04-03"
 
 keywords: security services, deployable architecture, IaC
 
@@ -18,6 +18,37 @@ subcollection: security-hub
 Use these release notes to learn about the latest updates to the Essential Security and Observability Services deployable architecture. The entries are grouped by date.
 {: shortdesc}
 
+## April 2025
+{: #security-services-date-for-update-2025-04}
+{: release-note}
+
+### 3 April 2025
+{: #security-services-date-for-update-apr-0425}
+{: release-note}
+
+Version 2.2.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
+:   The Essential Security and Observability Services deployable architecture deployable architecture version 2.2.0 [is released](/catalog#deployable_architecture){: external}.
+
+    - When you upgrade, all deployable architecture stack members are updated to their latest versions.
+    - Updates to the way the Secrets Manager IAM credentials engine is managed:
+        - The input `secret_manager_iam_engine_enabled` has changed. The UI now shows the option: `Disable Secrets Manager IAM credentials engine auth policy creation?`. The default value of this is `false` so that the Secrets Manager IAM credentials engine is enabled by default.
+        - The enablement of the engine is now handled by service to service authorisation policies:
+            - grants the Secrets Manager instance 'Operator' access to the IAM identity service
+            - grants the Secrets Manager instance 'Groups Service Member Manage' access to the IAM groups service
+        - If upgrading from a previous release where you had set `secret_manager_iam_engine_enabled` to `true`, you will now see the expected deletion of the service ID and related apikey as these are no longer needed due to the new service to service authorisation policies.
+    - The scope of the service authorization policy that is created in the Secrets Manager member to allow the instance to read the encryption key from the Key Protect service has been updated to only grant access to read the exact encryption key that is being used. Previously the scope was allowing reader access to the whole Key Protect instance. If upgrading from an older version, you will see the old authorization policy being deleted, a new ones being created. The new one is created before the old one is deleted to prevent any disruption to every day services.
+    - The {{site.data.keyword.compliance_short}} deployable architecture now creates a service authorization policy that grants the {{site.data.keyword.compliance_short}} instance `Event Source Manager` access to the {{site.data.keyword.en_short}} instance.
+    - Observability updates:
+        - The `enable_platform_logs_metrics` input has been split into 2 separate inputs:
+            - `enable_platform_metrics`: To enable platform metrics on the Cloud Monitoring instance that is provisioned
+            - `logs_routing_tenant_regions`: To define a list of regions you want platform logs routed from into the Cloud Logs instance
+        - Metrics routing is now enabled by default:
+            - A new target is set up that points to the Cloud Monitoring instance that is provisioned
+            - A new route is set up to route metrics to the new target
+            - The primary metrics region will be set to the same region that the Cloud Monitoring instance was provisioned to
+            - The default receiver will be set to the Cloud Monitoring instance that is provisioned
+        - The service authorisation policy between Cloud Logs and Event Notifications has been updated to allow the `Viewer` role. Previously it only had the `Event Source Manager` role. 
+
 ## November 2024
 {: #security-services-date-for-update-2024-11}
 {: release-note}
@@ -29,7 +60,7 @@ Use these release notes to learn about the latest updates to the Essential Secur
 Version 2.1.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
 :   The Essential Security and Observability Services deployable architecture deployable architecture version 2.1.0 [is released](/catalog#deployable_architecture){: external}.
 
-    If you are upgrading from an older version, ensure that you only proceed to upgrade from version 1.5.0 or later. If you attempt to upgrade from an older version, the Observability member will fail as you cannot disable Log Analysis log archiving and delete an IBM Log Analysis instance as part of the same deployment. {: note}
+     If you are upgrading from an older version, ensure that you only proceed to upgrade from version 1.5.0 or later. If you attempt to upgrade from an older version, the Observability member will fail as you cannot disable Log Analysis log archiving and delete an IBM Log Analysis instance as part of the same deployment. {: note}
 
     - When you upgrade, all deployable architecture stack members are updated to their latest versions.
     - A fix was added to the {{site.data.keyword.compliance_short}} deployable architecture to fix a backend change which was causing the below error to occur when configuring integration with {{site.data.keyword.en_short}}:  
