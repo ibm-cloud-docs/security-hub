@@ -1,8 +1,8 @@
-![image](https://github.ibm.com/cloud-docs-solutions/security-hub/assets/42199/66dae2d6-d057-4f10-9a60-a077de83a577)![image](https://github.ibm.com/cloud-docs-solutions/security-hub/assets/42199/b39f68ce-a90e-4bc1-83a1-55b230f78ffa)---
+---
 
 copyright:
-  years: 2024
-lastupdated: "2025-04-03"
+  years: 2024, 2025
+lastupdated: "2025-04-07"
 
 keywords: security services, deployable architecture, IaC
 
@@ -57,10 +57,12 @@ Version 2.2.0 of the Essential Security and Observability Services deployable ar
 {: #security-services-date-for-update-nov-1824}
 {: release-note}
 
-Version 2.1.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
-:   The Essential Security and Observability Services deployable architecture deployable architecture version 2.1.0 [is released](/catalog#deployable_architecture){: external}.
+Essential Security and Observability Services deployable architecture deployable architecture version 2.1.0
+:   The Essential Security and Observability Services deployable architecture deployable architecture version 2.1.0 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
-     If you are upgrading from an older version, ensure that you only proceed to upgrade from version 1.5.0 or later. If you attempt to upgrade from an older version, the Observability member will fail as you cannot disable Log Analysis log archiving and delete an IBM Log Analysis instance as part of the same deployment. {: note}
+    Due to the deprecation and subsequent replacement of functionality in the Observability architecture, you must be currently using version 1.5.0 or higher to upgrade to this version.
+    {: note}
+
 
     - When you upgrade, all deployable architecture stack members are updated to their latest versions.
     - A fix was added to the {{site.data.keyword.compliance_short}} deployable architecture to fix a backend change which was causing the below error to occur when configuring integration with {{site.data.keyword.en_short}}:  
@@ -71,17 +73,17 @@ Version 2.1.0 of the Essential Security and Observability Services deployable ar
 {: #security-services-date-for-update-nov-0424}
 {: release-note}
 
-Version 2.0.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
-:   The Essential Security and Observability Services deployable architecture deployable architecture version 2.0.0 [is released](/catalog#deployable_architecture){: external}.
+Essential Security and Observability Services deployable architecture deployable architecture version 2.0.0
+:   The Essential Security and Observability Services deployable architecture deployable architecture version 2.0.0 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
-    If you are upgrading from an older version, ensure that you only proceed to upgrade from version 1.5.0. If you attempt to upgrade from an older version, the Observability member will fail as you cannot disable Log Analysis log archiving and delete an IBM Log Analysis instance as part of the same deployment. {: note}
+    Due to the deprecation and subsequent replacement of functionality in the Observability architecture, you must be currently using version 1.5.0 to upgrade to this version.
+    {: note}
 
-    - IBM Log Analysis is now fully removed from the solution. Upgrading to this version will destroy the IBM Log Analysis instance that was provisioned with older versions. IBM Cloud Logs should now be used for managing logs. Support for Cloud Logs was added in version 1.5.0.
-    - IBM Cloud Logs is now configured with Event Notifications by default.
-    - The scope of the service authorization policies that are created in the Observability, Event Notifications, and Security and Compliance Center members to allow the Object storage service to read the encryption key from the Key Protect service have all been updated to only grant access to read the exact encryption key that is being used. Previouslly the scope was allowing reader access to the whole Key Protect instance. If upgrading from an older version, you will see the old authorization policies being deleted, and new ones being created. The new one is created before the old one is deleted to prevent any disruption to every day services.
-    - The Event Notifications member has been updated to communcate with the Object storage bucket over the direct endpoint. Previously it was using the public endpoint. This result in a non disruptive update in place if upgrading from an older version.
-    - The Object storage bucket created by the Event Notifications member has been updated so the Monitoring instance is no longer explicitly passed to it. The bucket metrics will still be monitored, however metrics will be sent to the instance associated to the container's location unless otherwise specified in the Metrics Router service configuration. This result in a non disruptive update in place if upgrading from an older version.
-    - An update in place will be done on all KMS key ring created by the member DAs as the `force_delete` option has been deprecated by the service. This has no impact to any services as the value is not being used by the backend.
+    * {{site.data.keyword.cloud_notm}} Logs is now used to manage logging within the solution and is configured in the {{site.data.keyword.en_short}} architecture by default.
+    * The authorization policies that are created as part of the Observability, {{site.data.keyword.en_short}}, and {{site.data.keyword.compliance_short}} deployments are updated to allow the Cloud Object Storage service to read only the encryption key provided that is used by the {[kp]} service. Previously, the policy allowed read access for the entirety of the {[kp]} service. When the architecture is updated from a previous version, the old authorization policy is automatically deleted after the new one is created to ensure that there are no disruptions to every day workflows. 
+    * The Cloud Object Storage bucket that is created during the {{site.data.keyword.en_short}} deployment is updated to prevent the Monitoring instance from being explicitly passed to it. The bucket metrics are still monitored, but they are forwarded to the instance that is associated with the container's location unless otherwise specified in the Metrics Router service configuration. 
+    * An update in place is done on the key management service key ring that is created by the included architectures as the `force_delete` option is deprecated by the service. There is no impact to any of the included services.
+
 
 ## October 2024
 {: #security-services-date-for-update-2024-10}
@@ -90,16 +92,13 @@ Version 2.0.0 of the Essential Security and Observability Services deployable ar
 {: #security-services-date-for-update-oct-1124}
 {: release-note}
 
-Version 1.5.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
-:   The Essential Security and Observability Services deployable architecture deployable architecture version 1.5.0 [is released](/catalog#deployable_architecture){: external}.
+Version 1.5.0 of the Essential Security and Observability Services deployable architecture deployable architecture
+:   The Essential Security and Observability Services deployable architecture deployable architecture version 1.5.0 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
-    - When you upgrade, all deployable architecture stack members are updated to their latest versions.
-    - The Observability deployable architecture will now deploy both IBM Cloud Logs and IBM Cloud Log Analysis. As IBM Cloud Log Analysis is now a deprecated service, which is replaced by IBM Cloud Logs, Log Analysis log archiving is now disabled which is required before the Log Analysis instance can be deleted.
-    - An Activity Tracker target is also now created for the IBM Cloud Logs instance, and an additional route is also set up to send activity tracker events to it. It means that activity tracker events are being sent to both an Object Storage bucket for long term storage, and to IBM Cloud Logs so they can be easily viewed.
-
-    In this version, the instance of IBM Cloud Logs will not have Event Notifications integration enabled, however this support will be coming in version 2.0.0. {: note}
-
-    - Since Log Analysis log archiving is now disabled, it means if you are upgrading from a previous version, the Object Storage bucket that was created by the Observability deployable architecture will be destroyed. If do not wan't to destroy this bucket and wan't to keep managing it through the Observability member deployable architecture, follow these steps:
+    - All deployable architectures are updated to use the latest version.
+    - The {{site.data.keyword.en_short}} integration is not enabled for this version.
+    - The Observability architecture now deploys IBM Cloud Logs and an activity tracking target is configured. An additional route is set up for events to be sent to both a Cloud Object Storage bucket for long term storage and to the Cloud Logs service so that they can be easily viewed.
+    - Due to the deprecation and subsequent replacement of technology in the Observability architecture, log archiving is now disabled. The Cloud Object Storage bucket that was created by previous versions of this architecture will be destroyed by default. If you'd like to keep the bucket and want to keep managing it through the Observability architecture, you can use the following steps to prevent deletion.
 
         1.  In the {{site.data.keyword.cloud_notm}} console, click the **Navigation menu** icon ![Navigation menu icon](../icons/icon_hamburger.svg "Menu") > **Projects**.
         1.  Click the project with the stacked deployable architecture that you want to update.
@@ -111,16 +110,6 @@ Version 1.5.0 of the Essential Security and Observability Services deployable ar
         1.  Click **Save**.
         1.  Follow the steps in [Step 3. Validate and deploy the architecture](/docs/security-hub?topic=security-hub-deploy-css#deploy-validate) to validate and deploy all deployable architectures in the stack.
 
-    - In version 2.0.0, Log Analysis will be full removed, however if you wan't to delete your Log Analysis instance before then, you can follow the below steps, but only after version 1.5.0 has been fully deployed:
-
-        1.  In the {{site.data.keyword.cloud_notm}} console, click the **Navigation menu** icon ![Navigation menu icon](../icons/icon_hamburger.svg "Menu") > **Projects**.
-        1.  Click the project with the stacked deployable architecture that you want to update.
-        1.  Click the **Configurations** tab.
-        1.  In the row for the member configuration named `2 - Observability`, click the **Options** icon ![Options icon](../icons/action-menu-icon.svg "Options") and select **Edit**.
-        1.  Click the **Optional** tab in the **Configure** section.
-        1.  Find the **log_analysis_provision** input variable and change the value to `false`.
-        1.  Click **Save**.
-        1.  Follow the steps in [Step 3. Validate and deploy the architecture](/docs/security-services?topic=security-services-deploy-css#deploy-validate) to validate and deploy the deployable architecture.
 
 ## September 2024
 {: #css-2024-09}
@@ -129,8 +118,8 @@ Version 1.5.0 of the Essential Security and Observability Services deployable ar
 {: #css-sep-0624}
 {: release-note}
 
-Version 1.4.1 of the Essential Security and Observability Services deployable architecture is available
-:   The Essential Security and Observability Services deployable architecture version 1.4.1 [is released](/catalog#deployable_architecture){: external}.
+Version 1.4.1 of the Essential Security and Observability Services deployable architecture
+:   The Essential Security and Observability Services deployable architecture version 1.4.1 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
     - When you upgrade, all deployable architecture members are updated to their latest versions.
     - Adds the `existing_en_instance_crn` input variable to specify an existing {{site.data.keyword.en_short}} instance.
@@ -164,11 +153,13 @@ Version 1.4.1 of the Essential Security and Observability Services deployable ar
 {: #css-aug-0124}
 {: release-note}
 
-Version 1.3.1 of the Essential Security and Observability Services deployable architecture is available
-:   The Essential Security and Observability Services deployable architecture version 1.3.1 [is released](/catalog#deployable_architecture){: external}.
+Version 1.3.1 of the Essential Security and Observability Services deployable architecture
+:   The Essential Security and Observability Services deployable architecture version 1.3.1 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
-    - Updates the {{site.data.keyword.secrets-manager_short}} member deployable architecture to version 1.17.1, which supports the use of `existing_secrets_manager_crn`.
-    - Adds a `secret_manager_iam_engine_enabled` input variable to configure credentials for the {{site.data.keyword.secrets-manager_short}} IAM credentials engine. The default value is `false`.
+    * To support the use of `existing_secrets_manager_crn`, the Essential Security and Observability Services deployable architecture is now updated to use version 1.17.1 of the {[sm]} architecture.
+    * The input variable `secret_manager_iam_engine_enabled` is added to configure credentials for the {[sm]} IAM credentials engine. The default value is `false`.
+
+
 
 ## July 2024
 {: #css-2024-07}
@@ -177,8 +168,8 @@ Version 1.3.1 of the Essential Security and Observability Services deployable ar
 {: #css-jul-2924}
 {: release-note}
 
-Version 1.2.1 of the Essential Security and Observability Services deployable architecture is available
-:   The Essential Security and Observability Services deployable architecture version 1.2.1 [is released](/catalog#deployable_architecture){: external}.
+Version 1.2.1 of the Essential Security and Observability Services deployable architecture
+:   The Essential Security and Observability Services deployable architecture version 1.2.1 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
      - When you upgrade, all deployable architecture members are updated to their latest versions.
      - A new `existing_kms_instance_crn` input variable adds support to use an existing key management service instance. By default, a new {{site.data.keyword.keymanagementserviceshort}} instance is created.
@@ -189,11 +180,11 @@ Version 1.2.1 of the Essential Security and Observability Services deployable ar
 {: #css-jul-0124}
 {: release-note}
 
-Version 1.1.1 of the Essential Security and Observability Services deployable architecture is available
-:   The Essential Security and Observability Services deployable architecture version 1.1.1 [is released](/catalog#deployable_architecture){: external}.
+Version 1.1.1 of the Essential Security and Observability Services deployable architecture
+:   The Essential Security and Observability Services deployable architecture version 1.1.1 [is now avaialble](/catalog#deployable_architecture){: external} with the following updates.
 
-    - In this version, a {{site.data.keyword.secrets-manager_short}} event notification destination and topic are created in the {{site.data.keyword.en_short}} instance that is created by the deployable architecture. Email subscriptions are also configured for the new destination and topic from the list of emails that is passed in the `en_email_list` input.
-    - The attachment that is created by the {{site.data.keyword.compliance_short}} member is updated to use the CIS IBM Cloud Foundations Benchmark v1.1.0 profile because version 1.0.0 is deprecated.
+    * A destination and topic are created in the {{site.data.keyword.en_short}} instance that is deployed for {[sm]}.  Email subscriptions are also configured for the new destination and topic from the list of emails that is passed in the `en_email_list` input.
+    * The attachment that is created by the {{site.data.keyword.compliance_short}} deployment is updated to use the CIS {{site.data.keyword.cloud_notm}} Foundations v1.1.0 profile as the previous version is deprecated.
 
         You must update the profile attachment input value in the `4a - Security and Compliance Center` member configuration to `CIS IBM Cloud Foundations Benchmark v1.1.0` when you update.
         {: important}
@@ -206,6 +197,6 @@ Version 1.1.1 of the Essential Security and Observability Services deployable ar
 {: release-note}
 
 Introducing the Essential Security and Observability Services deployable architecture
-:   The Essential Security and Observability Services deployable architecture [is released](/catalog#deployable_architecture){: external}: The deployable architecture deploys the following: {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.compliance_short}}, and {{site.data.keyword.sysdigsecure_full_notm}}. The deployable architecture also deploys {{site.data.keyword.en_short}} and Observability.
+:   The Essential Security and Observability Services deployable architecture [is released](/catalog#deployable_architecture){: external}. The deployable architecture deploys the following: {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.compliance_short}}, and {{site.data.keyword.sysdigsecure_full_notm}}. The deployable architecture also deploys {{site.data.keyword.en_short}} and Observability.
 
-    For more information about using deployable architectures with projects, see the blog posts [Projects and Cost Estimation: How IBM Cloud is Revolutionizing Complex Workloads for Enterprises](https://www.ibm.com/new/announcements/projects-and-cost-estimation) and [Turn Your Terraform Templates into Deployable Architectures](https://www.ibm.com/think/insights/turn-your-terraform-templates-into-deployable-architectures).
+    For more information about using deployable architectures with projects, see the blog posts [Projects and Cost Estimation: How IBM Cloud is Revolutionizing Complex Workloads for Enterprises](https://www.ibm.com/new/announcements/projects-and-cost-estimation){: external} and [Turn Your Terraform Templates into Deployable Architectures](https://www.ibm.com/think/insights/turn-your-terraform-templates-into-deployable-architectures){: external}.
