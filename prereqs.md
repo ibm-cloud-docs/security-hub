@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-02-07"
+lastupdated: "2025-04-29"
 
 keywords: security services, deployable architecture, IaC
 
@@ -39,7 +39,7 @@ Before you can deploy the Essential Security and Observability Services deployab
 * The required level of access to deploy and manage resources in the account.
 * An [{{site.data.keyword.cloud_notm}} API Key](/docs/account?topic=account-userapikey&interface=ui#create_user_key) in the target account with the suffienct permissions. Be sure to save the API key value for a later configuration.
 
-   * **Evaluation environments**: If your environment is used for evaluating, grant the Administrator role on the **IAM Identity Service**, **All Identity and Access enabled services**, **Activity Tracker Event Routing** and **All Account Management** services.
+   * **Evaluation environments**: If your environment is used for evaluating, grant the Administrator role on the **IAM Identity Service**, **All Identity and Access enabled services**, **Cloud Logs** and **All Account Management** services.
    * **Production environments**: If your environment is used for production resources, restrict access to the minimum permissions level as indicated in the **Permissions** tab of the details page of the deployable architecture catalog entry.
 
    For more information, see [Using an API key with Secrets Manager to authorize a project to deploy an architecture](/docs/secure-enterprise?topic=secure-enterprise-authorize-project).
