@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-02-10"
+lastupdated: "2025-05-02"
 
 keywords: security hub, deployable architecture, IaC
 
@@ -18,7 +18,7 @@ subcollection: security-hub
 If you experience an issue or have questions when you deploy the Essential Security and Observability Services deployable architecture, you can use the following resources before you open a support case.
 {: shortdesc}
 
-
+- Ask a question in the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant) from the console or the {{site.data.keyword.cloud_notm}} CLI.
 - Review the [troubleshooting documentation](/docs/security-hub?topic=security-hub-ts-secrets-mgr-trial) to troubleshoot and resolve common issues.
 - Review the [FAQs](/docs/security-hub?topic=security-hub-faqs).
 - ![{{site.data.keyword.cloud_notm}} icon](../icons/ibm-cloud-16.svg "IBM Cloud icon") Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.

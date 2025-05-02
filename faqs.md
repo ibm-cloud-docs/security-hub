@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-04-29"
+lastupdated: "2025-05-02"
 
 keywords: security services, deployable architecture, IaC
 
@@ -42,4 +42,4 @@ You can view and estimate of starting costs for a variation of the deployable ar
 {: #what-is-notifications}
 {: faq}
 
-To make sure you stay up to date with items that need attention in your deployable architecture, enable event notifications for projects. For more information, see [Enabling event notifications for projects](/docs/secure-enterprise?topic=secure-enterprise-event-notifications-events).
+To make sure you stay up to date with the items that need attention in your deployable architecture, enable event notifications for projects. For more information, see [Enabling event notifications for projects](/docs/secure-enterprise?topic=secure-enterprise-event-notifications-events).

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-08"
+lastupdated: "2025-05-02"
 
 keywords: security services, deployable architecture, IaC
 
@@ -20,7 +20,7 @@ Delete the stacked deployable architecture and all associated infrastructure res
 
 To undeploy the infrastructure created by the deployable architecture, complete the following steps:
 
-You can also [delete the project](/docs/secure-enterprise?topic=secure-enterprise-delete-project) to delete all member configurations if you do not want to delete member configurations one by one.
+If you want to bulk delete all of your configurations, you can [delete the project](/docs/secure-enterprise?topic=secure-enterprise-delete-project).
 {: tip}
 
 1.  [Install or update](/docs/cli?topic=cli-getting-started) the {{site.data.keyword.cloud_notm}} CLI.
