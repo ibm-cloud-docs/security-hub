@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-11-18"
+lastupdated: "2025-05-02"
 
 keywords: security services, deployable architecture, IaC
 
@@ -40,9 +40,7 @@ You can add and remove input and output variables that are available in the Esse
 ## Removing configurations
 {: #customize-remove-config}
 
-You can remove a member configuration from the stack that other configurations don't depend on.
-
-In the Essential Security and Observability Services deployable architecture, you can remove the configurations for the following services:
+You can remove a member configuration from the stack that other configurations don't depend on. In the Essential Security and Observability Services deployable architecture, you can remove the configurations for the following services:
 
 - {{site.data.keyword.compliance_short}}
 - {{site.data.keyword.secrets-manager_short}}

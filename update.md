@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-10-16"
+lastupdated: "2025-05-02"
 
 keywords: security services, deployable architecture, IaC
 
@@ -15,7 +15,7 @@ subcollection: security-hub
 # Updating to a new deployable architecture version
 {: #update-css}
 
-When you are notified about new versions of your deployable architecture and want to update to the new version, edit the configuration.
+When you are notified about new versions of your deployable architecture and want to update to the new version, you can edit the configuration.
 {: shortdesc}
 
 You can monitor and address other project lifecycle events from the Needs attention widget. For more information, see [Viewing needs attention items](/docs/secure-enterprise?topic=secure-enterprise-needs-attention-projects).

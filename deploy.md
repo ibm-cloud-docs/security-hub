@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-04-29"
+lastupdated: "2025-05-02"
 
 keywords: security services, deployable architecture, IaC
 
@@ -78,6 +78,7 @@ You can deploy a stacked deployable architecture in two ways:
 1.  In your project, click the **Configurations** tab.
 
     If the first member configuration of the stack (`1a - Key management`) is not marked as **Ready to validate**, refresh the page in your browser.
+    
 1.  Click **Validate** in **Draft status** in the `1a - Key management` row.
 1.  Approve the configuration and click **Deploy** after validation successfully completes.
 1.  After you deploy the initial member configuration, you can validate and deploy the remaining member configuration at the same time. Repeat these deployment steps for each member configuration in the architecture.

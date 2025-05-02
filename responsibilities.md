@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-12-04"
+lastupdated: "2025-05-02"
 
 keywords: security services, deployable architecture, IaC
 
@@ -23,7 +23,7 @@ Learn about the management responsibilities and terms and conditions that you ha
 - For the overall terms of use, see [{{site.data.keyword.cloud_notm}} Terms and Notices](/docs/overview?topic=overview-terms).
 
 
-Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use a Essential Security and Observability Services deployable architecture
+Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use the Essential Security and Observability Services deployable architecture.
 
 
 ## Incident and operations management

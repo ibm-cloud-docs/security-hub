@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2024-11-28"
+lastupdated: "2025-05-02"
 
 keywords: security services, deployable architecture, IaC
 
@@ -15,7 +15,7 @@ subcollection: security-hub
 # Known issues with Essential Security and Observability Services deployable architecture
 {: #known-issues}
 
-Because issues change frequently, check this list regularly.
+Learn about the following known issues and limitations for the Essential Security and Observability Services deployable architecture. Issues can change frequently, so be sure to check back regularly or view the release notes to see when they're resolved.
 {: shortdesc}
 
 ## Name clash when integrating {{site.data.keyword.compliance_short}} with {{site.data.keyword.en_short}}

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-04-29"
+lastupdated: "2025-05-02"
 
 keywords: security services, deployable architecture, IaC
 
@@ -61,7 +61,7 @@ Thanks for watching this video. If you want to see more videos like it leave a c
 ## Understanding responsibilities
 {: #responsibilities}
 
-As explained in the previous video, cloud security responsibilities are highly dependent upon the type of cloud computing model that you're working with. See the following table to learn more.
+As explained in the previous video, cloud security responsibilities are highly dependent upon the type of cloud computing model that you're working with. Check out the following table to learn more about the various types.
 
 | Computing model | Description |
 |------|-------------------------------------------------|
