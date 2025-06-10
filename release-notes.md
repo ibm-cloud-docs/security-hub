@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-06-05"
+lastupdated: "2025-06-10"
 
 keywords: security services, deployable architecture, IaC
 
@@ -19,11 +19,11 @@ Use these release notes to learn about the latest updates to the Essential Secur
 {: shortdesc}
 
 ## June 2025
-{: #security-services-date-for-update-2025-06}
+{: #security-services-date-for-update-2025-10}
 {: release-note}
 
-### 5 June 2025
-{: #security-services-date-for-update-jun-0525}
+### 10 June 2025
+{: #security-services-date-for-update-jun-1025}
 {: release-note}
 
 Version 3.0.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
