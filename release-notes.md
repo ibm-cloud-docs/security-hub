@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-06-12"
+lastupdated: "2025-06-17"
 
 keywords: security services, deployable architecture, IaC
 
@@ -22,7 +22,7 @@ Use these release notes to learn about the latest updates to the Essential Secur
 {: #security-services-date-for-update-2025-06}
 {: release-note}
 
-### 16 June 2025
+### 17 June 2025
 {: #security-services-date-for-update-jun-1625}
 {: release-note}
 
