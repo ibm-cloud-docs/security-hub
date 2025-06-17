@@ -23,14 +23,14 @@ Use these release notes to learn about the latest updates to the Essential Secur
 {: release-note}
 
 ### 17 June 2025
-{: #security-services-date-for-update-jun-1625}
+{: #security-services-date-for-update-jun-1725}
 {: release-note}
 
 Version 3.0.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
 :   The Essential Security and Observability Services deployable architecture deployable architecture version 3.0.0 [is released](/catalog#deployable_architecture){: external}.
 
    - Migration to Security and Compliance Center Workload Protection for Cloud Security Posture Management
-      - This solution will no longer provision an instance of the Security and Compliance Center service as it has been deprecated and new instances cannot be provisioned after 16th June 2025.
+      - This solution will no longer provision an instance of the Security and Compliance Center service as it has been deprecated and new instances cannot be provisioned after 17th July 2025.
       - The solution will now provision a new instance of [App Configuration](app-configuration) and [Security and Compliance Center Worklaod Protection](workload-protection) with [Cloud Security Posture Management (CSPM)](workload-protection?topic=workload-protection-about) enabled by default.
       - If you are upgrading from a previous version of the solution, you will continue to see the member named `4a - Security and Compliance Center` so that you can decide when you want to delete the Security and Compliance Center instance and associated Object Storage bucket. Please be aware that this config also has an instance of Security and Compliance Center Worklaod Protection deployed as part of it, however it is not enabled with Cloud Security Posture Management (CSPM) and is safe to delete as the new instance that is now created by the solution will be used going forward.
       - For more information, see [Security and Compliance Center transition](security-compliance?topic=security-compliance-scc-transition).
