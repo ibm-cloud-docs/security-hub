@@ -21,7 +21,7 @@ At its core, cloud security is the collection of procedures and technology that 
 
 Historically, security and compliance strategies have been time intensive and manual because when you deploy an application, you must manage the entire data center and servers, as well as the applications and data. In a cloud model, it's a shared responsibility between you and the cloud provider. As you get started on your journey to cloud, you must rethink your security architecture and fully understand what is your responsibility and what is the cloud providers.
 
-Check out the ![video](https://www.youtube.com/watch?v=jI8IKpjiCSM) to learn more about securely running your applications in the cloud.
+Check out the ![video](https://www.youtube.com/watch?v=jI8IKpjiCSM){: external} to learn more about securely running your applications in the cloud.
 
 
 
