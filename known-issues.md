@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-05-02"
+lastupdated: "2025-08-19"
 
 keywords: security services, deployable architecture, IaC
 
@@ -21,12 +21,12 @@ Learn about the following known issues and limitations for the Essential Securit
 ## Name clash when integrating {{site.data.keyword.compliance_short}} with {{site.data.keyword.en_short}}
 {: #scc-en-name-clash}
 
-By default the {{site.data.keyword.compliance_short}} deployable architecutre will use a source name called "compliance" when it configures integration with an {{site.data.keyword.en_short}} instance. This source name has to be unique in the {{site.data.keyword.en_short}} instance, so if you have several {{site.data.keyword.compliance_short}} instances configured to use the same Event Notifications instance, it is possible the integration configuration will fail with the error `Source name already exists in Event Notifications instance`.
+By default the {{site.data.keyword.compliance_short}} deployable architecture will use a source name called "compliance" when it configures integration with an {{site.data.keyword.en_short}} instance. This source name has to be unique in the {{site.data.keyword.en_short}} instance, so if you have several {{site.data.keyword.compliance_short}} instances configured to use the same Event Notifications instance, it is possible the integration configuration will fail with the error `Source name already exists in Event Notifications instance`.
 
 ### Workaround
 {: #scc-en-name-clash-workaround}
 
-It is possible to set the source name used to prevent this error by changing the value of the `en_source_name` input variable in the {{site.data.keyword.compliance_short}} deployable architecutre.
+It is possible to set the source name used to prevent this error by changing the value of the `en_source_name` input variable in the {{site.data.keyword.compliance_short}} deployable architecture.
 
 ## Error when you try to undeploy key management
 {: #ki-kms-undeploy}
