@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-07-16"
+lastupdated: "2025-08-19"
 
 keywords: security services, deployable architecture, IaC
 
@@ -52,8 +52,8 @@ Version 2.2.0 of the Essential Security and Observability Services deployable ar
    - Updates to the way the Secrets Manager IAM credentials engine is managed:
       - The input `secret_manager_iam_engine_enabled` has changed. The UI now shows the option: `Disable Secrets Manager IAM credentials engine auth policy creation?`. The default value of this is `false` so that the Secrets Manager IAM credentials engine is enabled by default.
       - The enablement of the engine is now handled by service to service authorisation policies:
-         - grants the Secrets Manager instance **Operator** access to the IAM identity service
-         - grants the Secrets Manager instance **Groups Service Member Manage** access to the IAM groups service
+         - grants the Secrets Manager instance `Operator` access to the IAM identity service
+         - grants the Secrets Manager instance `Groups Service Member Manage` access to the IAM groups service
       - If upgrading from a previous release where you had set `secret_manager_iam_engine_enabled` to `true`, you will now see the expected deletion of the service ID and related apikey as these are no longer needed due to the new service to service authorisation policies.
    - The scope of the service authorization policy that is created in the Secrets Manager member to allow the instance to read the encryption key from the Key Protect service has been updated to only grant access to read the exact encryption key that is being used. Previously the scope was allowing reader access to the whole Key Protect instance. If upgrading from an older version, you will see the old authorization policy being deleted, a new ones being created. The new one is created before the old one is deleted to prevent any disruption to every day services.
    - The {{site.data.keyword.compliance_short}} deployable architecture now creates a service authorization policy that grants the {{site.data.keyword.compliance_short}} instance `Event Source Manager` access to the {{site.data.keyword.en_short}} instance.
