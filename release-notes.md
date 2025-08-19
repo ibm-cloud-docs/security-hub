@@ -99,7 +99,7 @@ Essential Security and Observability Services deployable architecture deployable
     {: note}
 
    * {{site.data.keyword.cloud_notm}} Logs is now used to manage logging within the solution and is configured in the {{site.data.keyword.en_short}} architecture by default.
-   * The authorization policies that are created as part of the Observability, {{site.data.keyword.en_short}}, and {{site.data.keyword.compliance_short}} deployments are updated to allow the Cloud Object Storage service to read only the encryption key provided that is used by the {[kp]} service. Previously, the policy allowed read access for the entirety of the {[kp]} service. When the architecture is updated from a previous version, the old authorization policy is automatically deleted after the new one is created to ensure that there are no disruptions to every day workflows. 
+   * The authorization policies that are created as part of the Observability, {{site.data.keyword.en_short}}, and {{site.data.keyword.compliance_short}} deployments are updated to allow the Cloud Object Storage service to read only the encryption key provided that is used by the {{site.data.keyword.keymanagementserviceshort}} service. Previously, the policy allowed read access for the entirety of the {{site.data.keyword.keymanagementserviceshort}} service. When the architecture is updated from a previous version, the old authorization policy is automatically deleted after the new one is created to ensure that there are no disruptions to every day workflows. 
    * The Cloud Object Storage bucket that is created during the {{site.data.keyword.en_short}} deployment is updated to prevent the Monitoring instance from being explicitly passed to it. The bucket metrics are still monitored, but they are forwarded to the instance that is associated with the container's location unless otherwise specified in the Metrics Router service configuration. 
    * An update in place is done on the key management service key ring that is created by the included architectures as the `force_delete` option is deprecated by the service. There is no impact to any of the included services.
 
@@ -175,8 +175,8 @@ Version 1.4.1 of the Essential Security and Observability Services deployable ar
 Version 1.3.1 of the Essential Security and Observability Services deployable architecture
 :   The Essential Security and Observability Services deployable architecture version 1.3.1 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
-	* To support the use of `existing_secrets_manager_crn`, the Essential Security and Observability Services deployable architecture is now updated to use version 1.17.1 of the {[sm]} architecture.
-	* The input variable `secret_manager_iam_engine_enabled` is added to configure credentials for the {[sm]} IAM credentials engine. The default value is `false`.
+	* To support the use of `existing_secrets_manager_crn`, the Essential Security and Observability Services deployable architecture is now updated to use version 1.17.1 of the {{site.data.keyword.secrets-manager_short}} architecture.
+	* The input variable `secret_manager_iam_engine_enabled` is added to configure credentials for the {{site.data.keyword.secrets-manager_short}} IAM credentials engine. The default value is `false`.
 
 
 
@@ -202,7 +202,7 @@ Version 1.2.1 of the Essential Security and Observability Services deployable ar
 Version 1.1.1 of the Essential Security and Observability Services deployable architecture
 :   The Essential Security and Observability Services deployable architecture version 1.1.1 [is now avaialble](/catalog#deployable_architecture){: external} with the following updates.
 
-	* A destination and topic are created in the {{site.data.keyword.en_short}} instance that is deployed for {[sm]}.  Email subscriptions are also configured for the new destination and topic from the list of emails that is passed in the `en_email_list` input.
+	* A destination and topic are created in the {{site.data.keyword.en_short}} instance that is deployed for {{site.data.keyword.secrets-manager_short}}.  Email subscriptions are also configured for the new destination and topic from the list of emails that is passed in the `en_email_list` input.
 	* The attachment that is created by the {{site.data.keyword.compliance_short}} deployment is updated to use the CIS {{site.data.keyword.cloud_notm}} Foundations v1.1.0 profile as the previous version is deprecated.
 
       You must update the profile attachment input value in the `4a - Security and Compliance Center` member configuration to `CIS IBM Cloud Foundations Benchmark v1.1.0` when you update.
