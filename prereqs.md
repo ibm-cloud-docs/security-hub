@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-05-02"
+lastupdated: "2025-06-26"
 
 keywords: security services, deployable architecture, IaC
 
@@ -22,7 +22,7 @@ When you deploy the architecture, you can:
 
 * **Implement security**: The architecture provisions security services such as {{site.data.keyword.keymanagementservicelong_notm}} and {{site.data.keyword.secrets-manager_full_notm}} that can help you to manage sensitive data for your organization. 
 
-* **Ensure observability**: The architecture provisions observability services such as {{site.data.keyword.la_full_notm}}, {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, {{site.data.keyword.en_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
+* **Ensure observability**: The architecture provisions observability services such as {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, {{site.data.keyword.en_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
 
 * **Monitor for regulatory compliance**: The architecture helps to ensure regulatory compliance by provisioning {{site.data.keyword.sysdigsecure_full_notm}} to validate the configurations that are made as part of application lifecycle management against the CIS {{site.data.keyword.cloud_notm}} Foundations Benchmark profile. To see the controls that are included, go to the Essential Security and Observability Services deployable architecture catalog tile in the console and click the **Security & compliance** tab. 
 

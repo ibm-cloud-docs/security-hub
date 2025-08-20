@@ -14,7 +14,8 @@ toc:
       id: overview
       topics:
       - what-is.md
-      - best-practices.md
+      - topic: best-practices.md
+        navtitle: Best practices
       - topic: release-notes.md
         navtitle: Release notes
   - navgroup:

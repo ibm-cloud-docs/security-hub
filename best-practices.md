@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-05-02"
+lastupdated: "2025-08-19"
 
 keywords: security services, deployable architecture, IaC
 
@@ -12,7 +12,7 @@ subcollection: security-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Best practices
+# Best practices for access, secrets, and deployment configuration
 {: #best-practices}
 
 As you transition your workloads to {{site.data.keyword.cloud_notm}}, be sure to keep the following best practices in mind. These best practices around assigning access, managing secrets, and configuring deployments can help ensure that your compliance audits run smoothly.

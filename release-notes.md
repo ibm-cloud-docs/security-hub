@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-06-17"
+lastupdated: "2025-08-19"
 
 keywords: security services, deployable architecture, IaC
 
@@ -31,9 +31,9 @@ Version 3.0.0 of the Essential Security and Observability Services deployable ar
 
    - Migration to Security and Compliance Center Workload Protection for Cloud Security Posture Management
       - This solution will no longer provision an instance of the Security and Compliance Center service as it has been deprecated and new instances cannot be provisioned after 17th July 2025.
-      - The solution will now provision a new instance of [App Configuration](app-configuration) and [Security and Compliance Center Worklaod Protection](workload-protection) with [Cloud Security Posture Management (CSPM)](workload-protection?topic=workload-protection-about) enabled by default.
+      - The solution will now provision a new instance of [App Configuration](/docs/app-configuration?topic=app-configuration-getting-started) and [Security and Compliance Center Workload Protection](/docs/workload-protection?topic=workload-protection-getting-started) with [Cloud Security Posture Management (CSPM)](/docs/workload-protection?topic=workload-protection-about) enabled by default.
       - If you are upgrading from a previous version of the solution, you will continue to see the member named `4a - Security and Compliance Center` so that you can decide when you want to delete the Security and Compliance Center instance and associated Object Storage bucket. Please be aware that this config also has an instance of Security and Compliance Center Worklaod Protection deployed as part of it, however it is not enabled with Cloud Security Posture Management (CSPM) and is safe to delete as the new instance that is now created by the solution will be used going forward.
-      - For more information, see [Security and Compliance Center transition](security-compliance?topic=security-compliance-scc-transition).
+      - For more information, see [Security and Compliance Center transition](/docs/security-compliance?topic=security-compliance-scc-transition).
    - The service to service authorization that is used to allow the ATracker service write to Object Storage has been updated so that the scope of the policy is scoped to the exact Object Storage bucket.
       - If upgrading from an older version, you will see the old authorization policy being deleted, a new ones being created. The new one is created before the old one is deleted to prevent any disruption to every day services.
 
@@ -52,8 +52,8 @@ Version 2.2.0 of the Essential Security and Observability Services deployable ar
    - Updates to the way the Secrets Manager IAM credentials engine is managed:
       - The input `secret_manager_iam_engine_enabled` has changed. The UI now shows the option: `Disable Secrets Manager IAM credentials engine auth policy creation?`. The default value of this is `false` so that the Secrets Manager IAM credentials engine is enabled by default.
       - The enablement of the engine is now handled by service to service authorisation policies:
-         - grants the Secrets Manager instance 'Operator' access to the IAM identity service
-         - grants the Secrets Manager instance 'Groups Service Member Manage' access to the IAM groups service
+         - grants the Secrets Manager instance `Operator` access to the IAM identity service
+         - grants the Secrets Manager instance `Groups Service Member Manage` access to the IAM groups service
       - If upgrading from a previous release where you had set `secret_manager_iam_engine_enabled` to `true`, you will now see the expected deletion of the service ID and related apikey as these are no longer needed due to the new service to service authorisation policies.
    - The scope of the service authorization policy that is created in the Secrets Manager member to allow the instance to read the encryption key from the Key Protect service has been updated to only grant access to read the exact encryption key that is being used. Previously the scope was allowing reader access to the whole Key Protect instance. If upgrading from an older version, you will see the old authorization policy being deleted, a new ones being created. The new one is created before the old one is deleted to prevent any disruption to every day services.
    - The {{site.data.keyword.compliance_short}} deployable architecture now creates a service authorization policy that grants the {{site.data.keyword.compliance_short}} instance `Event Source Manager` access to the {{site.data.keyword.en_short}} instance.
@@ -99,7 +99,7 @@ Essential Security and Observability Services deployable architecture deployable
     {: note}
 
    * {{site.data.keyword.cloud_notm}} Logs is now used to manage logging within the solution and is configured in the {{site.data.keyword.en_short}} architecture by default.
-   * The authorization policies that are created as part of the Observability, {{site.data.keyword.en_short}}, and {{site.data.keyword.compliance_short}} deployments are updated to allow the Cloud Object Storage service to read only the encryption key provided that is used by the {[kp]} service. Previously, the policy allowed read access for the entirety of the {[kp]} service. When the architecture is updated from a previous version, the old authorization policy is automatically deleted after the new one is created to ensure that there are no disruptions to every day workflows. 
+   * The authorization policies that are created as part of the Observability, {{site.data.keyword.en_short}}, and {{site.data.keyword.compliance_short}} deployments are updated to allow the Cloud Object Storage service to read only the encryption key provided that is used by the {{site.data.keyword.keymanagementserviceshort}} service. Previously, the policy allowed read access for the entirety of the {{site.data.keyword.keymanagementserviceshort}} service. When the architecture is updated from a previous version, the old authorization policy is automatically deleted after the new one is created to ensure that there are no disruptions to every day workflows. 
    * The Cloud Object Storage bucket that is created during the {{site.data.keyword.en_short}} deployment is updated to prevent the Monitoring instance from being explicitly passed to it. The bucket metrics are still monitored, but they are forwarded to the instance that is associated with the container's location unless otherwise specified in the Metrics Router service configuration. 
    * An update in place is done on the key management service key ring that is created by the included architectures as the `force_delete` option is deprecated by the service. There is no impact to any of the included services.
 
@@ -175,8 +175,8 @@ Version 1.4.1 of the Essential Security and Observability Services deployable ar
 Version 1.3.1 of the Essential Security and Observability Services deployable architecture
 :   The Essential Security and Observability Services deployable architecture version 1.3.1 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
-	* To support the use of `existing_secrets_manager_crn`, the Essential Security and Observability Services deployable architecture is now updated to use version 1.17.1 of the {[sm]} architecture.
-	* The input variable `secret_manager_iam_engine_enabled` is added to configure credentials for the {[sm]} IAM credentials engine. The default value is `false`.
+	* To support the use of `existing_secrets_manager_crn`, the Essential Security and Observability Services deployable architecture is now updated to use version 1.17.1 of the {{site.data.keyword.secrets-manager_short}} architecture.
+	* The input variable `secret_manager_iam_engine_enabled` is added to configure credentials for the {{site.data.keyword.secrets-manager_short}} IAM credentials engine. The default value is `false`.
 
 
 
@@ -202,7 +202,7 @@ Version 1.2.1 of the Essential Security and Observability Services deployable ar
 Version 1.1.1 of the Essential Security and Observability Services deployable architecture
 :   The Essential Security and Observability Services deployable architecture version 1.1.1 [is now avaialble](/catalog#deployable_architecture){: external} with the following updates.
 
-	* A destination and topic are created in the {{site.data.keyword.en_short}} instance that is deployed for {[sm]}.  Email subscriptions are also configured for the new destination and topic from the list of emails that is passed in the `en_email_list` input.
+	* A destination and topic are created in the {{site.data.keyword.en_short}} instance that is deployed for {{site.data.keyword.secrets-manager_short}}.  Email subscriptions are also configured for the new destination and topic from the list of emails that is passed in the `en_email_list` input.
 	* The attachment that is created by the {{site.data.keyword.compliance_short}} deployment is updated to use the CIS {{site.data.keyword.cloud_notm}} Foundations v1.1.0 profile as the previous version is deprecated.
 
       You must update the profile attachment input value in the `4a - Security and Compliance Center` member configuration to `CIS IBM Cloud Foundations Benchmark v1.1.0` when you update.
