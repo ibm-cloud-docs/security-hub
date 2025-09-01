@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-06-26"
+lastupdated: "2025-09-01"
 
 keywords: security services, deployable architecture, IaC
 
@@ -12,10 +12,10 @@ subcollection: security-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Preparing to deploy the Essential Security and Observability Services deployable architecture
+# Preparing to deploy the Cloud foundation for security and observability deployable architecture
 {: #prereqs}
 
-The Essential Security and Observability Services deployable architecture is a preconfigured set of infrastructure as code assets that are designed to deploy select {{site.data.keyword.cloud_notm}} security services according to best practices. The included security services are crucial for helping ensure that you have a robust security and compliance strategy for your applications and data. By using this architecture, you can accelerate your deployment and tailor it to meet your organizations security and compliance requirements.
+The Cloud foundation for security and observability deployable architecture is a preconfigured set of infrastructure as code assets that are designed to deploy select {{site.data.keyword.cloud_notm}} security services according to best practices. The included security services are crucial for helping ensure that you have a robust security and compliance strategy for your applications and data. By using this architecture, you can accelerate your deployment and tailor it to meet your organizations security and compliance requirements.
 {: shortdesc}
 
 When you deploy the architecture, you can:
@@ -24,12 +24,12 @@ When you deploy the architecture, you can:
 
 * **Ensure observability**: The architecture provisions observability services such as {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, {{site.data.keyword.en_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
 
-* **Monitor for regulatory compliance**: The architecture helps to ensure regulatory compliance by provisioning {{site.data.keyword.sysdigsecure_full_notm}} to validate the configurations that are made as part of application lifecycle management against the CIS {{site.data.keyword.cloud_notm}} Foundations Benchmark profile. To see the controls that are included, go to the Essential Security and Observability Services deployable architecture catalog tile in the console and click the **Security & compliance** tab. 
+* **Monitor for regulatory compliance**: The architecture helps to ensure regulatory compliance by provisioning {{site.data.keyword.sysdigsecure_full_notm}} to validate the configurations that are made as part of application lifecycle management against the CIS {{site.data.keyword.cloud_notm}} Foundations Benchmark profile. To see the controls that are included, go to the Cloud foundation for security and observability deployable architecture catalog tile in the console and click the **Security & compliance** tab. 
 
 ## Before you deploy
 {: #before-deploy-prereq}
 
-Before you can deploy the Essential Security and Observability Services deployable architecture, you must have the following prerequisites.
+Before you can deploy the Cloud foundation for security and observability deployable architecture, you must have the following prerequisites.
 
 * A Pay-As-You-Go or Subscription {{site.data.keyword.cloud_notm}} account. 
 

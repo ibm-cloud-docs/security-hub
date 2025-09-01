@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-05-02"
+lastupdated: "2025-09-01"
 
 keywords: security services, deployable architecture, IaC
 
@@ -12,10 +12,10 @@ subcollection: security-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Understanding your responsibilities when you use the Essential Security and Observability Services deployable architecture
+# Understanding your responsibilities when you use the Cloud foundation for security and observability deployable architecture
 {: #shared-resp}
 
-Learn about the management responsibilities and terms and conditions that you have when you use the Essential Security and Observability Services deployable architecture.
+Learn about the management responsibilities and terms and conditions that you have when you use the Cloud foundation for security and observability deployable architecture.
 {: shortdesc} 
 
 - For more information about the responsibilities for you and for {{site.data.keyword.IBM}} when you use a deployable architecture, see [Understanding your responsibilities when you use deployable architectures](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures).
@@ -23,7 +23,7 @@ Learn about the management responsibilities and terms and conditions that you ha
 - For the overall terms of use, see [{{site.data.keyword.cloud_notm}} Terms and Notices](/docs/overview?topic=overview-terms).
 
 
-Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use the Essential Security and Observability Services deployable architecture.
+Review the following sections for the specific responsibilities for you and for {{site.data.keyword.IBM_notm}} when you use the Cloud foundation for security and observability deployable architecture.
 
 
 ## Incident and operations management
@@ -31,7 +31,7 @@ Review the following sections for the specific responsibilities for you and for 
 
 Incident and operations management includes tasks such as monitoring, event management, high availability, problem determination, recovery, and full state backup and recovery.
 
-The Essential Security and Observability Services deployable architecturedoes not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Incident and operations management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#incident-and-ops-da).
+The Cloud foundation for security and observability deployable architecturedoes not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Incident and operations management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#incident-and-ops-da).
 
 
 ## Change management
@@ -39,7 +39,7 @@ The Essential Security and Observability Services deployable architecturedoes no
 
 Change management includes tasks such as deployment, configuration, upgrades, patching, configuration changes, and deletion.
 
-The Essential Security and Observability Services deployable architecturedoes not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Change management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#change-management-da).
+The Cloud foundation for security and observability deployable architecturedoes not identify specific responsibilities in this area. For more information about the general change management responsibilities when you use deployable architectures, see [Change management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#change-management-da).
 
 
 ## Identity and access management
