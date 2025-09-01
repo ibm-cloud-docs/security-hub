@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-08-19"
+lastupdated: "2025-09-01"
 
 keywords: security services, deployable architecture, IaC
 
@@ -12,10 +12,10 @@ subcollection: security-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Release notes for the Essential Security and Observability Services deployable architecture
+# Release notes for the Cloud foundation for security and observability deployable architecture
 {: #release-notes}
 
-Use these release notes to learn about the latest updates to the Essential Security and Observability Services deployable architecture. The entries are grouped by date.
+Use these release notes to learn about the latest updates to the Cloud foundation for security and observability deployable architecture. The entries are grouped by date.
 {: shortdesc}
 
 ## June 2025
@@ -26,8 +26,8 @@ Use these release notes to learn about the latest updates to the Essential Secur
 {: #security-services-date-for-update-jun-1725}
 {: release-note}
 
-Version 3.0.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
-:   The Essential Security and Observability Services deployable architecture deployable architecture version 3.0.0 [is released](/catalog#deployable_architecture){: external}.
+Version 3.0.0 of the Cloud foundation for security and observability deployable architecture deployable architecture is available
+:   The Cloud foundation for security and observability deployable architecture deployable architecture version 3.0.0 [is released](/catalog#deployable_architecture){: external}.
 
    - Migration to Security and Compliance Center Workload Protection for Cloud Security Posture Management
       - This solution will no longer provision an instance of the Security and Compliance Center service as it has been deprecated and new instances cannot be provisioned after 17th July 2025.
@@ -45,8 +45,8 @@ Version 3.0.0 of the Essential Security and Observability Services deployable ar
 {: #security-services-date-for-update-apr-0425}
 {: release-note}
 
-Version 2.2.0 of the Essential Security and Observability Services deployable architecture deployable architecture is available
-:   The Essential Security and Observability Services deployable architecture deployable architecture version 2.2.0 [is released](/catalog#deployable_architecture){: external}.
+Version 2.2.0 of the Cloud foundation for security and observability deployable architecture deployable architecture is available
+:   The Cloud foundation for security and observability deployable architecture deployable architecture version 2.2.0 [is released](/catalog#deployable_architecture){: external}.
 
    - When you upgrade, all deployable architecture stack members are updated to their latest versions.
    - Updates to the way the Secrets Manager IAM credentials engine is managed:
@@ -76,8 +76,8 @@ Version 2.2.0 of the Essential Security and Observability Services deployable ar
 {: #security-services-date-for-update-nov-1824}
 {: release-note}
 
-Essential Security and Observability Services deployable architecture deployable architecture version 2.1.0
-:   The Essential Security and Observability Services deployable architecture deployable architecture version 2.1.0 [is now available](/catalog#deployable_architecture){: external} with the following changes.
+Cloud foundation for security and observability deployable architecture deployable architecture version 2.1.0
+:   The Cloud foundation for security and observability deployable architecture deployable architecture version 2.1.0 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
    Due to the deprecation and subsequent replacement of functionality in the Observability architecture, you must be currently using version 1.5.0 or higher to upgrade to this version.
    {: note}
@@ -92,8 +92,8 @@ Essential Security and Observability Services deployable architecture deployable
 {: #security-services-date-for-update-nov-0424}
 {: release-note}
 
-Essential Security and Observability Services deployable architecture deployable architecture version 2.0.0
-:   The Essential Security and Observability Services deployable architecture deployable architecture version 2.0.0 [is now available](/catalog#deployable_architecture){: external} with the following changes.
+Cloud foundation for security and observability deployable architecture deployable architecture version 2.0.0
+:   The Cloud foundation for security and observability deployable architecture deployable architecture version 2.0.0 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
    Due to the deprecation and subsequent replacement of functionality in the Observability architecture, you must be currently using version 1.5.0 to upgrade to this version.
     {: note}
@@ -111,8 +111,8 @@ Essential Security and Observability Services deployable architecture deployable
 {: #security-services-date-for-update-oct-1124}
 {: release-note}
 
-Version 1.5.0 of the Essential Security and Observability Services deployable architecture deployable architecture
-:   The Essential Security and Observability Services deployable architecture deployable architecture version 1.5.0 [is now available](/catalog#deployable_architecture){: external} with the following changes.
+Version 1.5.0 of the Cloud foundation for security and observability deployable architecture deployable architecture
+:   The Cloud foundation for security and observability deployable architecture deployable architecture version 1.5.0 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
    - All deployable architectures are updated to use the latest version.
    - The {{site.data.keyword.en_short}} integration is not enabled for this version.
@@ -137,8 +137,8 @@ Version 1.5.0 of the Essential Security and Observability Services deployable ar
 {: #css-sep-0624}
 {: release-note}
 
-Version 1.4.1 of the Essential Security and Observability Services deployable architecture
-:   The Essential Security and Observability Services deployable architecture version 1.4.1 [is now available](/catalog#deployable_architecture){: external} with the following changes.
+Version 1.4.1 of the Cloud foundation for security and observability deployable architecture
+:   The Cloud foundation for security and observability deployable architecture version 1.4.1 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
    - When you upgrade, all deployable architecture members are updated to their latest versions.
    - Adds the `existing_en_instance_crn` input variable to specify an existing {{site.data.keyword.en_short}} instance.
@@ -172,10 +172,10 @@ Version 1.4.1 of the Essential Security and Observability Services deployable ar
 {: #css-aug-0124}
 {: release-note}
 
-Version 1.3.1 of the Essential Security and Observability Services deployable architecture
-:   The Essential Security and Observability Services deployable architecture version 1.3.1 [is now available](/catalog#deployable_architecture){: external} with the following changes.
+Version 1.3.1 of the Cloud foundation for security and observability deployable architecture
+:   The Cloud foundation for security and observability deployable architecture version 1.3.1 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
-	* To support the use of `existing_secrets_manager_crn`, the Essential Security and Observability Services deployable architecture is now updated to use version 1.17.1 of the {{site.data.keyword.secrets-manager_short}} architecture.
+	* To support the use of `existing_secrets_manager_crn`, the Cloud foundation for security and observability deployable architecture is now updated to use version 1.17.1 of the {{site.data.keyword.secrets-manager_short}} architecture.
 	* The input variable `secret_manager_iam_engine_enabled` is added to configure credentials for the {{site.data.keyword.secrets-manager_short}} IAM credentials engine. The default value is `false`.
 
 
@@ -187,8 +187,8 @@ Version 1.3.1 of the Essential Security and Observability Services deployable ar
 {: #css-jul-2924}
 {: release-note}
 
-Version 1.2.1 of the Essential Security and Observability Services deployable architecture
-:   The Essential Security and Observability Services deployable architecture version 1.2.1 [is now available](/catalog#deployable_architecture){: external} with the following changes.
+Version 1.2.1 of the Cloud foundation for security and observability deployable architecture
+:   The Cloud foundation for security and observability deployable architecture version 1.2.1 [is now available](/catalog#deployable_architecture){: external} with the following changes.
 
 	- When you upgrade, all deployable architecture members are updated to their latest versions.
 	- A new `existing_kms_instance_crn` input variable adds support to use an existing key management service instance. By default, a new {{site.data.keyword.keymanagementserviceshort}} instance is created.
@@ -199,8 +199,8 @@ Version 1.2.1 of the Essential Security and Observability Services deployable ar
 {: #css-jul-0124}
 {: release-note}
 
-Version 1.1.1 of the Essential Security and Observability Services deployable architecture
-:   The Essential Security and Observability Services deployable architecture version 1.1.1 [is now avaialble](/catalog#deployable_architecture){: external} with the following updates.
+Version 1.1.1 of the Cloud foundation for security and observability deployable architecture
+:   The Cloud foundation for security and observability deployable architecture version 1.1.1 [is now avaialble](/catalog#deployable_architecture){: external} with the following updates.
 
 	* A destination and topic are created in the {{site.data.keyword.en_short}} instance that is deployed for {{site.data.keyword.secrets-manager_short}}.  Email subscriptions are also configured for the new destination and topic from the list of emails that is passed in the `en_email_list` input.
 	* The attachment that is created by the {{site.data.keyword.compliance_short}} deployment is updated to use the CIS {{site.data.keyword.cloud_notm}} Foundations v1.1.0 profile as the previous version is deprecated.
@@ -215,7 +215,7 @@ Version 1.1.1 of the Essential Security and Observability Services deployable ar
 {: #css-jun-2424}
 {: release-note}
 
-Introducing the Essential Security and Observability Services deployable architecture
-:   The Essential Security and Observability Services deployable architecture [is released](/catalog#deployable_architecture){: external}. The deployable architecture deploys the following: {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.compliance_short}}, and {{site.data.keyword.sysdigsecure_full_notm}}. The deployable architecture also deploys {{site.data.keyword.en_short}} and Observability.
+Introducing the Cloud foundation for security and observability deployable architecture
+:   The Cloud foundation for security and observability deployable architecture [is released](/catalog#deployable_architecture){: external}. The deployable architecture deploys the following: {{site.data.keyword.keymanagementserviceshort}}, {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.compliance_short}}, and {{site.data.keyword.sysdigsecure_full_notm}}. The deployable architecture also deploys {{site.data.keyword.en_short}} and Observability.
 
 	For more information about using deployable architectures with projects, see the blog posts [Projects and Cost Estimation: How IBM Cloud is Revolutionizing Complex Workloads for Enterprises](https://www.ibm.com/new/announcements/projects-and-cost-estimation){: external} and [Turn Your Terraform Templates into Deployable Architectures](https://www.ibm.com/think/insights/turn-your-terraform-templates-into-deployable-architectures){: external}.

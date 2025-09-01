@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-05-02"
+lastupdated: "2025-09-01"
 
 keywords: security services, deployable architecture, IaC
 
@@ -15,7 +15,7 @@ subcollection: security-hub
 # Deploying the architecture
 {: #deploy-css}
 
-To deploy the Essential Security and Observability Services deployable architecture, you can start from the {{site.data.keyword.cloud_notm}} catalog.
+To deploy the Cloud foundation for security and observability deployable architecture, you can start from the {{site.data.keyword.cloud_notm}} catalog.
 {: shortdesc}
 
 ## Before you begin
@@ -28,7 +28,7 @@ Before you get started, be sure that you complete all of the prerequisites that 
 
 To deploy an architecture, you must add it to a project.
 
-1. In the [{{site.data.keyword.cloud_notm}} catalog](/catalog#reference_architecture){: external}, search for the Essential Security and Observability Services deployable architecture.
+1. In the [{{site.data.keyword.cloud_notm}} catalog](/catalog#reference_architecture){: external}, search for the Cloud foundation for security and observability deployable architecture.
 1. Select the tile for the deployable architecture.
 1. In the **Architecture** section, choose the latest product version.
 1. Click **review deployment options**.
@@ -83,7 +83,7 @@ You can deploy a stacked deployable architecture in two ways:
 1.  Approve the configuration and click **Deploy** after validation successfully completes.
 1.  After you deploy the initial member configuration, you can validate and deploy the remaining member configuration at the same time. Repeat these deployment steps for each member configuration in the architecture.
 
-The Essential Security and Observability Services deployable architecture is now deployed in the target account.
+The Cloud foundation for security and observability deployable architecture is now deployed in the target account.
 
 ## Viewing the created resources
 {: #deploy-view-resources}

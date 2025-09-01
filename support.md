@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-05-02"
+lastupdated: "2025-09-01"
 
 keywords: security hub, deployable architecture, IaC
 
@@ -12,10 +12,10 @@ subcollection: security-hub
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Getting help and support for the Essential Security and Observability Services deployable architecture
+# Getting help and support for the Cloud foundation for security and observability deployable architecture
 {: #help-support}
 
-If you experience an issue or have questions when you deploy the Essential Security and Observability Services deployable architecture, you can use the following resources before you open a support case.
+If you experience an issue or have questions when you deploy the Cloud foundation for security and observability deployable architecture, you can use the following resources before you open a support case.
 {: shortdesc}
 
 - Ask a question in the [AI assistant](/docs/overview?topic=overview-ask-ai-assistant) from the console or the {{site.data.keyword.cloud_notm}} CLI.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-05-02"
+lastupdated: "2025-09-01"
 
 keywords: security services, deployable architecture, IaC
 
@@ -14,14 +14,14 @@ content-type: troubleshoot
 
 {{site.data.keyword.attribute-definition-list}}
 
-# Why does my {{site.data.keyword.secrets-manager_short}} deployment fail with Essential Security and Observability Services deployable architecture?
+# Why does my {{site.data.keyword.secrets-manager_short}} deployment fail with Cloud foundation for security and observability deployable architecture?
 {: #ts-secrets-mgr-trial}
 {: troubleshoot}
 
 Your deployment of {{site.data.keyword.secrets-manager_short}} failed.
 {: shortdesc}
 
-You attempted to deploy the {{site.data.keyword.secrets-manager_short}} member of the Essential Security and Observability Services deployable architecture deployable architecture, but it failed.
+You attempted to deploy the {{site.data.keyword.secrets-manager_short}} member of the Cloud foundation for security and observability deployable architecture deployable architecture, but it failed.
 {: tsSymptoms}
 
 An error displays in the {{site.data.keyword.secrets-manager_short}} deployment step if a Trial instance is already deployed in the same account. And if a Trial plan instance of {{site.data.keyword.secrets-manager_short}} is undeployed and then redeployed with the Trial plan in the same account, the deployment of the {{site.data.keyword.secrets-manager_short}} member fails.
