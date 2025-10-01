@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-09-01"
+lastupdated: "2025-09-29"
 
 keywords: security services, deployable architecture, IaC
 
@@ -17,6 +17,24 @@ subcollection: security-hub
 
 Use these release notes to learn about the latest updates to the Cloud foundation for security and observability deployable architecture. The entries are grouped by date.
 {: shortdesc}
+
+## October 2025
+{: #security-services-date-for-update-2025-10}
+{: release-note}
+
+### 1 October 2025
+{: #security-services-date-for-update-oct-0125}
+{: release-note}
+
+Version 4.0.0 of the Cloud foundation for security and observability deployable architecture deployable architecture is available
+:   The Cloud foundation for security and observability deployable architecture deployable architecture version 4.0.0 [is released](/catalog#deployable_architecture){: external}.
+
+   - The `Standard` variation has been deprecated and will no longer be deployable after 7th October 2025.
+   - The new `Click and go` variation deploys the exact same security and observability services using newer enhcanced variations of the member deployable architectures.
+       - In the new `Click and go` variation, there is now a second Cloud Logs instance created specifically for Activity Tracking events.
+
+   There is no supported upgrade path from the `Standard` variation to the `Click and go` variation.
+    {: important}
 
 ## June 2025
 {: #security-services-date-for-update-2025-06}
