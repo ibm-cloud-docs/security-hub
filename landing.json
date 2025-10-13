@@ -3,7 +3,7 @@
   "title": "IBM Cloud Security",
   "introduction": "Learn about cloud security, choose the products that are correct for you, and then deploy the core security and supporting services.",
   "deployment_url": "https://cloud.ibm.com/catalog/architecture/deploy-arch-ibm-core-security-svcs-0294f96e-7314-48d1-a710-c08a541b2119-global?catalog_query=aHR0cHM6Ly9jbG91ZC5pYm0uY29tL2NhdGFsb2cjZGVwbG95YWJsZV9hcmNoaXRlY3R1cmU%3D",
-  "product_page": "https://www.ibm.com/cloud/security",
+  "product_page": "https://www.ibm.com/products/cloud/security",
   "console_page": "/security-hub",
   "section_topics": {
     "links": [
@@ -35,13 +35,13 @@
     {
       "title": "IBM Cloud compliance programs",
       "description": "Learn more about IBM's compliance standards.",
-      "href": "https://www.ibm.com/cloud/compliance",
+      "href": "https://www.ibm.com/products/cloud/compliance",
       "type": "blog"
     }
   ],
   "section_architectures": [
     {
-      "title": "Cloud foundation for security and observability",
+      "title": "IBM Cloud Essential Security and Observability Services",
       "href": "/docs/security-hub?topic=security-hub-core-security-services-pattern",
       "deployable": true
     }

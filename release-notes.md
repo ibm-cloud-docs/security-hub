@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-09-29"
+lastupdated: "2025-10-13"
 
 keywords: security services, deployable architecture, IaC
 
@@ -104,7 +104,7 @@ Cloud foundation for security and observability deployable architecture deployab
    - When you upgrade, all deployable architecture stack members are updated to their latest versions.
    - A fix was added to the {{site.data.keyword.compliance_short}} deployable architecture to fix a backend change which was causing the below error to occur when configuring integration with {{site.data.keyword.en_short}}:  
         `Error setting event_notifications: Invalid address to set: []string{"event_notifications", "0", "source_description"}`
-   - All of the deployable architecture stack members (with the exception of the Observability member due to this [provider bug](https://github.com/IBM-Cloud/terraform-provider-ibm/issues/5824)), will now use the IBM Cloud regional private endpoint or global private endpoint by default. The regional private endpoint is given higher precedence. In order to use the private endpoint from an IBM Cloud resource, one must have a [VRF-enabled](https://cloud.ibm.com/docs/account?topic=account-vrf-service-endpoint&interface=ui) account. This can be overriden and set back to public by editing each of the deployable architecture stack members and changing the value of the `provider_visibility` input.
+   - All of the deployable architecture stack members (with the exception of the Observability member due to this [provider bug](https://github.com/IBM-Cloud/terraform-provider-ibm/issues/5824)), will now use the IBM Cloud regional private endpoint or global private endpoint by default. The regional private endpoint is given higher precedence. In order to use the private endpoint from an IBM Cloud resource, one must have a [VRF-enabled](/docs/account?topic=account-vrf-service-endpoint&interface=ui) account. This can be overriden and set back to public by editing each of the deployable architecture stack members and changing the value of the `provider_visibility` input.
 
 ### 4 November 2024
 {: #security-services-date-for-update-nov-0424}

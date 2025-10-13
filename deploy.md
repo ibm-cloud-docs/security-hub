@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-09-01"
+lastupdated: "2025-10-13"
 
 keywords: security services, deployable architecture, IaC
 
@@ -31,10 +31,12 @@ To deploy an architecture, you must add it to a project.
 1. In the [{{site.data.keyword.cloud_notm}} catalog](/catalog#reference_architecture){: external}, search for the Cloud foundation for security and observability deployable architecture.
 1. Select the tile for the deployable architecture.
 1. In the **Architecture** section, choose the latest product version.
-1. Click **review deployment options**.
+1. Click **Review deployment options**.
 1. In the **Deployment options** section, select **Add to project**. Then, click **Add to project**.
 1. Give your project a name, enter a description, and specify a configuration name.
-1. Click **Create**.
+1. Click **Next**.
+1. You can add or remove deployable architectures based on your use case.
+1. Accept the License agreement and click **Add to project**.
 
 
 ## Configuring your stack
