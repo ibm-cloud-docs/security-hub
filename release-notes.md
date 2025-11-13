@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2025
-lastupdated: "2025-10-13"
+lastupdated: "2025-11-13"
 
 keywords: security services, deployable architecture, IaC
 
@@ -17,6 +17,20 @@ subcollection: security-hub
 
 Use these release notes to learn about the latest updates to the Cloud foundation for security and observability deployable architecture. The entries are grouped by date.
 {: shortdesc}
+
+## November 2025
+{: #security-services-date-for-update-2025-11}
+{: release-note}
+
+### 13 November 2025
+{: #security-services-date-for-update-nov-0125}
+{: release-note}
+
+Version 4.0.1 of the Cloud foundation for security and observability deployable architecture deployable architecture is available
+:   The Cloud foundation for security and observability deployable architecture deployable architecture version 4.0.1 [is released](/catalog#deployable_architecture){: external}.
+
+   - The `prefix` input now has a default value using a random string affix.
+   - When you upgrade, all deployable architecture stack members are updated to their latest versions.
 
 ## October 2025
 {: #security-services-date-for-update-2025-10}
