@@ -83,9 +83,6 @@ toc:
               label: Secrets Manager
               href: https://cloud.ibm.com/docs/secrets-manager
           - link:
-              label: Security and Compliance Center
-              href: https://cloud.ibm.com/docs/security-compliance
-          - link:
               label: Workload Protection
               href: https://cloud.ibm.com/docs/workload-protection
   - navgroup:
