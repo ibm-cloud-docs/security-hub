@@ -20,11 +20,14 @@ The Cloud foundation for security and observability deployable architecture is a
 
 When you deploy the architecture, you can:
 
-* **Implement security**: The architecture provisions security services such as {{site.data.keyword.keymanagementservicelong_notm}} and {{site.data.keyword.secrets-manager_full_notm}} that can help you to manage sensitive data for your organization. 
+* **Implement security**: The architecture provisions security services such as {{site.data.keyword.keymanagementservicelong_notm}} and {{site.data.keyword.secrets-manager_full_notm}} that can help you to manage sensitive data for your organization.
+   * {{site.data.keyword.keymanagementservicelong_notm}} — Automate with Terraform: [terraform-ibm-kms-all-inclusive](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external}
+   * {{site.data.keyword.secrets-manager_full_notm}} — Automate with Terraform: [terraform-ibm-secrets-manager](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external}
 
 * **Ensure observability**: The architecture provisions observability services such as {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, {{site.data.keyword.en_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
 
-* **Monitor for regulatory compliance**: The architecture helps to ensure regulatory compliance by provisioning {{site.data.keyword.sysdigsecure_full_notm}} to validate the configurations that are made as part of application lifecycle management against the CIS {{site.data.keyword.cloud_notm}} Foundations Benchmark profile. To see the controls that are included, go to the Cloud foundation for security and observability deployable architecture catalog tile in the console and click the **Security & compliance** tab. 
+* **Monitor for regulatory compliance**: The architecture helps to ensure regulatory compliance by provisioning {{site.data.keyword.sysdigsecure_full_notm}} to validate the configurations that are made as part of application lifecycle management against the CIS {{site.data.keyword.cloud_notm}} Foundations Benchmark profile. To see the controls that are included, go to the Cloud foundation for security and observability deployable architecture catalog tile in the console and click the **Security & compliance** tab.
+   * {{site.data.keyword.sysdigsecure_full_notm}} — Automate with Terraform: [terraform-ibm-scc-workload-protection](https://github.com/terraform-ibm-modules/terraform-ibm-scc-workload-protection){: external}
 
 ## Before you deploy
 {: #before-deploy-prereq}
@@ -46,6 +49,10 @@ Before you can deploy the Cloud foundation for security and observability deploy
 
 * Optional: Install the {{site.data.keyword.cloud_notm}} CLI Project plug-in by running the `ibmcloud plugin install project` command. For more information, see the [Project CLI reference](/docs/cli?topic=cli-projects-cli).
 * Optional: Familiarize yourself with the [Customization options](/docs/security-hub?topic=security-hub-customize-css).
+
+**Alternative: Deploy directly with Terraform IBM Modules**
+
+If your team manages infrastructure with Terraform outside of {{site.data.keyword.cloud_notm}} Projects, you can assemble the same security foundation using individual Terraform IBM Modules. This approach gives you full control over your Terraform state and pipeline, and is well suited for teams with established GitOps workflows.
 
 You might see notifications in {{site.data.keyword.cloud_notm}} projects that new versions of a configuration are available. You can ignore these messages because they do not prevent you from deploying the stack. No specific action is required from you. These notifications are expected, as we are rapidly iterating on the development of the underlying components. As new stack versions become available, the versions of the underlying components are also updated.
 {: tip}

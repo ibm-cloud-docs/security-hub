@@ -57,6 +57,11 @@ Identity and access management includes tasks such as authentication, authorizat
 
 For more information about the general Identity and access management responsibilities when you use deployable architectures, see [Identity and access management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#iam-responsibilities-da).
 
+To help fulfill your IAM responsibilities programmatically, you can use the following Terraform IBM Modules:
+
+- Use [`terraform-ibm-iam-access-group`](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group){: external} to define and manage access groups as code, ensuring that least-privilege policies are consistently applied and version-controlled.
+- Use [`terraform-ibm-iam-account-settings`](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external} to enforce account-level security controls such as MFA requirements and session policies across all environments.
+
 
 ## Security and regulation compliance
 {: #security-compliance}
@@ -72,6 +77,8 @@ Security and regulation compliance includes tasks such as security controls impl
 {: summary="The rows are read from left to right. The first column describes the task that the customer or IBM might be responsibility for. The second column describes {{site.data.keyword.IBM_notm}} responsibilities for that task. The third column describes your responsibilities as the customer for that task."}
 
 For more information about the general Security and regulation compliance responsibilities when you use deployable architectures, see [Security and regulation compliance](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#security-compliance-da).
+
+To help automate your security and compliance posture, consider using the [`terraform-ibm-scc-workload-protection`](https://github.com/terraform-ibm-modules/terraform-ibm-scc-workload-protection){: external} Terraform IBM Module to provision and configure {{site.data.keyword.sysdigsecure_full_notm}} as code. You can also use the [`terraform-ibm-cbr`](https://github.com/terraform-ibm-modules/terraform-ibm-cbr){: external} module to define Context-Based Restrictions that limit which network zones can access your {{site.data.keyword.cloud_notm}} resources — a key control for many compliance frameworks.
 
 ## Disaster recovery
 {: #disaster-recovery}
