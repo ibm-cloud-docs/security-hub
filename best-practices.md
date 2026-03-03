@@ -55,7 +55,7 @@ module "iam_access_group" {
 ```
 {: codeblock}
 
-For the full list of inputs, outputs, and usage examples, see the [`terraform-ibm-iam-access-group` module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group){: external} on GitHub.
+For the full list of inputs, outputs, and usage examples, see the [`terraform-ibm-iam-access-group` module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group){: external} on GitHub or on the [Terraform Registry](https://registry.terraform.io/modules/terraform-ibm-modules/iam-access-group/ibm/latest){: external}.
 
 ## Tag your resources
 {: #bp-tags}
@@ -87,7 +87,7 @@ module "iam_account_settings" {
 ```
 {: codeblock}
 
-For the full list of configurable settings, see the [`terraform-ibm-iam-account-settings` module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external} on GitHub.
+For the full list of configurable settings, see the [`terraform-ibm-iam-account-settings` module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external} on GitHub or on the [Terraform Registry](https://registry.terraform.io/modules/terraform-ibm-modules/iam-account-settings/ibm/latest){: external}.
 
 
 ## Encrypt the data in your account

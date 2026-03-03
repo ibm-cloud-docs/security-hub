@@ -57,7 +57,7 @@ Identity and access management includes tasks such as authentication, authorizat
 
 For more information about the general Identity and access management responsibilities when you use deployable architectures, see [Identity and access management](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#iam-responsibilities-da).
 
-To help fulfill your IAM responsibilities programmatically, you can use the following Terraform IBM Modules:
+To help fulfill your IAM responsibilities programmatically, you can use the following [Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim){: external}:
 
 - Use [`terraform-ibm-iam-access-group`](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group){: external} to define and manage access groups as code, ensuring that least-privilege policies are consistently applied and version-controlled.
 - Use [`terraform-ibm-iam-account-settings`](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external} to enforce account-level security controls such as MFA requirements and session policies across all environments.

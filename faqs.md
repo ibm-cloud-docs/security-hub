@@ -34,13 +34,13 @@ Infrastructure as code (IaC) is code to manage and provision infrastructure (for
 
 With IaC, code defines your infrastructure, specifying your resources and their configuration. Your infrastructure code is treated the same as app code so that you can apply DevOps core practices such as version control, testing, and continuous monitoring. The Cloud foundation for security and observability deployable architecture use [Terraform](https://developer.hashicorp.com/terraform){: external} to specify the infrastructure and [{{site.data.keyword.bplong_notm}}](/docs/schematics?topic=schematics-getting-started) to manage the deployment.
 
-{{site.data.keyword.cloud_notm}} also provides a library of open-source [Terraform IBM Modules](https://github.com/terraform-ibm-modules){: external} — reusable, production-ready Terraform configurations for individual {{site.data.keyword.cloud_notm}} services. Teams that manage their own Terraform pipelines can use these modules to provision the same security services that underpin the deployable architecture, with full control over state, configuration, and deployment workflow.
+{{site.data.keyword.cloud_notm}} also provides a library of open-source [Terraform IBM Modules (TIM)](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim){: external} — reusable, production-ready Terraform configurations for individual {{site.data.keyword.cloud_notm}} services. Teams that manage their own Terraform pipelines can use these modules to provision the same security services that underpin the deployable architecture, with full control over state, configuration, and deployment workflow. Browse all available modules on the [Terraform Registry](https://registry.terraform.io/namespaces/terraform-ibm-modules){: external}.
 
 ## Can I use Terraform IBM Modules to deploy or extend this architecture?
 {: #what-is-tim}
 {: faq}
 
-Yes. The Cloud foundation for security and observability deployable architecture is built on [Terraform IBM Modules (TIM)](https://github.com/terraform-ibm-modules){: external} — a library of open-source, {{site.data.keyword.IBM_notm}}-maintained Terraform modules. If you want to deploy individual components of the architecture independently, or extend the architecture with additional services, you can reference these modules directly in your own Terraform configurations.
+Yes. The Cloud foundation for security and observability deployable architecture is built on [Terraform IBM Modules (TIM)](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim){: external} — a library of open-source, {{site.data.keyword.IBM_notm}}-maintained Terraform modules. If you want to deploy individual components of the architecture independently, or extend the architecture with additional services, you can reference these modules directly in your own Terraform configurations. Browse the full module catalog on the [Terraform Registry](https://registry.terraform.io/namespaces/terraform-ibm-modules){: external}.
 
 The following modules are used as part of this architecture:
 

@@ -52,7 +52,7 @@ Before you can deploy the Cloud foundation for security and observability deploy
 
 **Alternative: Deploy directly with Terraform IBM Modules**
 
-If your team manages infrastructure with Terraform outside of {{site.data.keyword.cloud_notm}} Projects, you can assemble the same security foundation using individual Terraform IBM Modules. This approach gives you full control over your Terraform state and pipeline, and is well suited for teams with established GitOps workflows.
+If your team manages infrastructure with Terraform outside of {{site.data.keyword.cloud_notm}} Projects, you can assemble the same security foundation using individual [Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim){: external}. This approach gives you full control over your Terraform state and pipeline, and is well suited for teams with established GitOps workflows. Browse all available modules on the [Terraform Registry](https://registry.terraform.io/namespaces/terraform-ibm-modules){: external}.
 
 You might see notifications in {{site.data.keyword.cloud_notm}} projects that new versions of a configuration are available. You can ignore these messages because they do not prevent you from deploying the stack. No specific action is required from you. These notifications are expected, as we are rapidly iterating on the development of the underlying components. As new stack versions become available, the versions of the underlying components are also updated.
 {: tip}
