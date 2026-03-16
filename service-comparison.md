@@ -31,11 +31,11 @@ The following table lists the different offerings that you can use with {{site.d
 
 | Scenario | What to use | Terraform IBM Module |
 | --- | --- | --- |
-| As a DevOps team contributor, you need to create, lease, and manage API keys, credentials, database configurations, and other secrets for your services and applications. | With **[{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager)**, you can manage secrets of various types in a dedicated instance. | [terraform-ibm-secrets-manager](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} |
-| You need to generate, renew, and manage SSL/TLS certificates for your deployments. | You can also manage your SSL/TLS certificates and private keys in a dedicated instance of **[{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager)**. | [terraform-ibm-secrets-manager](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} |
-| You need to create and manage encryption keys that are backed by FIPS 140-2 Level 3 validated hardware. | You can use **[{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect)** to generate and import encryption keys by using a multi-tenant service with shared hardware. | [terraform-ibm-key-protect](https://github.com/terraform-ibm-modules/terraform-ibm-key-protect){: external} |
-| You are an admin in an industry, such as finance or legal, that must adhere to governance over how data is protected and isolated. You need to create and manage encryption keys by using a dedicated, FIPS 140-2 Level 4 hardware security module that you control and manage. | With **[{{site.data.keyword.hscrypto}}](/docs/hs-crypto)**, you can manage encryption keys in a single-tenant service with dedicated hardware. | [terraform-ibm-hpcs](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} |
-| You need a way to offload TLS handshake encryption to a dedicated, FIPS 140-2 Level 4 hardware security module that you control and manage. | You can also use **[{{site.data.keyword.hscrypto}}](/docs/hs-crypto)** to control your TLS/SSL keys in a dedicated HSM. | [terraform-ibm-hpcs](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} |
+| As a DevOps team contributor, you need to create, lease, and manage API keys, credentials, database configurations, and other secrets for your services and applications. | With **[{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager)**, you can manage secrets of various types in a dedicated instance. | [Secrets Manager module](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} |
+| You need to generate, renew, and manage SSL/TLS certificates for your deployments. | You can also manage your SSL/TLS certificates and private keys in a dedicated instance of **[{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager)**. | [Secrets Manager module](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} |
+| You need to create and manage encryption keys that are backed by FIPS 140-2 Level 3 validated hardware. | You can use **[{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect)** to generate and import encryption keys by using a multi-tenant service with shared hardware. | [Key Protect module](https://github.com/terraform-ibm-modules/terraform-ibm-key-protect){: external} |
+| You are an admin in an industry, such as finance or legal, that must adhere to governance over how data is protected and isolated. You need to create and manage encryption keys by using a dedicated, FIPS 140-2 Level 4 hardware security module that you control and manage. | With **[{{site.data.keyword.hscrypto}}](/docs/hs-crypto)**, you can manage encryption keys in a single-tenant service with dedicated hardware. | [HPCS module](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} |
+| You need a way to offload TLS handshake encryption to a dedicated, FIPS 140-2 Level 4 hardware security module that you control and manage. | You can also use **[{{site.data.keyword.hscrypto}}](/docs/hs-crypto)** to control your TLS/SSL keys in a dedicated HSM. | [HPCS module](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} |
 {: caption="Data protection scenarios" caption-side="top"}
 
 ## What are the key secret types supported by each data protection service?
@@ -76,12 +76,12 @@ If you prefer to provision and manage these services using Terraform, {{site.dat
 
 | Service | Terraform IBM Module |
 | --- | --- |
-| {{site.data.keyword.keymanagementserviceshort}} | [`terraform-ibm-key-protect`](https://github.com/terraform-ibm-modules/terraform-ibm-key-protect){: external} |
-| {{site.data.keyword.keymanagementserviceshort}} keys | [`terraform-ibm-kms-key`](https://github.com/terraform-ibm-modules/terraform-ibm-kms-key){: external} |
-| {{site.data.keyword.keymanagementserviceshort}} key rings | [`terraform-ibm-kms-key-ring`](https://github.com/terraform-ibm-modules/terraform-ibm-kms-key-ring){: external} |
-| {{site.data.keyword.keymanagementserviceshort}} all-inclusive | [`terraform-ibm-kms-all-inclusive`](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external} |
-| {{site.data.keyword.hscrypto}} | [`terraform-ibm-hpcs`](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} |
-| {{site.data.keyword.secrets-manager_short}} | [`terraform-ibm-secrets-manager`](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} |
+| {{site.data.keyword.keymanagementserviceshort}} | [Key Protect module](https://github.com/terraform-ibm-modules/terraform-ibm-key-protect){: external} |
+| {{site.data.keyword.keymanagementserviceshort}} keys | [KMS Key module](https://github.com/terraform-ibm-modules/terraform-ibm-kms-key){: external} |
+| {{site.data.keyword.keymanagementserviceshort}} key rings | [KMS Key Ring module](https://github.com/terraform-ibm-modules/terraform-ibm-kms-key-ring){: external} |
+| {{site.data.keyword.keymanagementserviceshort}} all-inclusive | [KMS All-Inclusive module](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external} |
+| {{site.data.keyword.hscrypto}} | [HPCS module](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} |
+| {{site.data.keyword.secrets-manager_short}} | [Secrets Manager module](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} |
 {: caption="Terraform IBM Modules for data protection services" caption-side="top"}
 
 Each module is open source, versioned, and includes usage examples. You can browse the full library on the [Terraform Registry](https://registry.terraform.io/namespaces/terraform-ibm-modules){: external}, on the [Terraform IBM Modules GitHub organization](https://github.com/terraform-ibm-modules){: external}, or learn more in the [About Terraform IBM Modules](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim){: external} documentation.

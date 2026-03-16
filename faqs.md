@@ -44,14 +44,14 @@ Yes. The Cloud foundation for security and observability deployable architecture
 
 The following modules are used as part of this architecture:
 
-- [`terraform-ibm-key-protect`](https://github.com/terraform-ibm-modules/terraform-ibm-key-protect){: external} — Provisions {{site.data.keyword.keymanagementserviceshort}}
-- [`terraform-ibm-kms-all-inclusive`](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external} — Provisions Key Protect with keys and key rings
-- [`terraform-ibm-secrets-manager`](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} — Provisions {{site.data.keyword.secrets-manager_short}}
-- [`terraform-ibm-scc-workload-protection`](https://github.com/terraform-ibm-modules/terraform-ibm-scc-workload-protection){: external} — Provisions SCC Workload Protection
-- [`terraform-ibm-iam-access-group`](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group){: external} — Manages IAM access groups
-- [`terraform-ibm-iam-account-settings`](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external} — Manages account-level security settings
-- [`terraform-ibm-cbr`](https://github.com/terraform-ibm-modules/terraform-ibm-cbr){: external} — Manages Context-Based Restrictions
-- [`terraform-ibm-hpcs`](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} — Provisions Hyper Protect Crypto Services
+- [Key Protect module](https://github.com/terraform-ibm-modules/terraform-ibm-key-protect){: external} — Provisions {{site.data.keyword.keymanagementserviceshort}}
+- [KMS All-Inclusive module](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external} — Provisions Key Protect with keys and key rings
+- [Secrets Manager module](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} — Provisions {{site.data.keyword.secrets-manager_short}}
+- [SCC Workload Protection module](https://github.com/terraform-ibm-modules/terraform-ibm-scc-workload-protection){: external} — Provisions SCC Workload Protection
+- [IAM Access Group module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group){: external} — Manages IAM access groups
+- [IAM Account Settings module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external} — Manages account-level security settings
+- [CBR module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr){: external} — Manages Context-Based Restrictions
+- [HPCS module](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} — Provisions Hyper Protect Crypto Services
 
 ## How do I estimate costs?
 {: #what-is-project-cost}

@@ -27,7 +27,7 @@ Helping ensure the proper configuration of IAM policies is one of the greatest f
 ### Enforce least-privilege account settings as code
 {: #bp-access-terraform}
 
-Use the [`terraform-ibm-iam-account-settings`](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external} module to restrict sensitive account-level capabilities — such as the ability to create platform API keys or service IDs — to only those who require them. Defining these restrictions in Terraform ensures they are applied consistently and cannot be inadvertently bypassed.
+Use the [IAM Account Settings module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external} to restrict sensitive account-level capabilities — such as the ability to create platform API keys or service IDs — to only those who require them. Defining these restrictions in Terraform ensures they are applied consistently and cannot be inadvertently bypassed.
 
 
 ## Take advantage of access groups
@@ -41,7 +41,7 @@ Does a user need this permission for a short time period? It might be better pra
 ### Automate access group management with Terraform
 {: #bp-groups-terraform}
 
-If you manage your {{site.data.keyword.cloud_notm}} infrastructure using Terraform, you can use the [`terraform-ibm-iam-access-group`](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group){: external} Terraform IBM Module to define and provision access groups as code. This approach ensures that your access group configurations are version-controlled, repeatable, and auditable — which is especially valuable in regulated industries.
+If you manage your {{site.data.keyword.cloud_notm}} infrastructure using Terraform, you can use the [IAM Access Group module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group){: external} to define and provision access groups as code. This approach ensures that your access group configurations are version-controlled, repeatable, and auditable — which is especially valuable in regulated industries.
 
 ```terraform
 module "iam_access_group" {
@@ -55,7 +55,7 @@ module "iam_access_group" {
 ```
 {: codeblock}
 
-For the full list of inputs, outputs, and usage examples, see the [`terraform-ibm-iam-access-group` module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group){: external} on GitHub or on the [Terraform Registry](https://registry.terraform.io/modules/terraform-ibm-modules/iam-access-group/ibm/latest){: external}.
+For the full list of inputs, outputs, and usage examples, see the [IAM Access Group module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-access-group){: external} on GitHub or on the [Terraform Registry](https://registry.terraform.io/modules/terraform-ibm-modules/iam-access-group/ibm/latest){: external}.
 
 ## Tag your resources
 {: #bp-tags}
@@ -73,7 +73,7 @@ While multifactor authentication is typically a choice made by each organization
 ### Automate account security settings with Terraform
 {: #bp-mfa-terraform}
 
-You can codify your account-level security settings — including MFA requirements, session policies, and allowed IP ranges — by using the [`terraform-ibm-iam-account-settings`](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external} Terraform IBM Module. Defining these settings as code ensures consistent enforcement across all environments and eliminates the risk of manual misconfiguration.
+You can codify your account-level security settings — including MFA requirements, session policies, and allowed IP ranges — by using the [IAM Account Settings module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external}. Defining these settings as code ensures consistent enforcement across all environments and eliminates the risk of manual misconfiguration.
 
 ```terraform
 module "iam_account_settings" {
@@ -87,7 +87,7 @@ module "iam_account_settings" {
 ```
 {: codeblock}
 
-For the full list of configurable settings, see the [`terraform-ibm-iam-account-settings` module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external} on GitHub or on the [Terraform Registry](https://registry.terraform.io/modules/terraform-ibm-modules/iam-account-settings/ibm/latest){: external}.
+For the full list of configurable settings, see the [IAM Account Settings module](https://github.com/terraform-ibm-modules/terraform-ibm-iam-account-settings){: external} on GitHub or on the [Terraform Registry](https://registry.terraform.io/modules/terraform-ibm-modules/iam-account-settings/ibm/latest){: external}.
 
 
 ## Encrypt the data in your account
@@ -98,17 +98,17 @@ By using credentials, keys, or certificates it is important that your data remai
 ### Strengthen encryption with network-level access boundaries
 {: #bp-mng-secrets-cbr}
 
-Encrypting data is essential, but equally important is ensuring that only approved services and networks can reach your key management and secrets infrastructure. {{site.data.keyword.cloud_notm}} Context-Based Restrictions (CBR) let you define rules that restrict which resources can call which services, based on network context. Use the [`terraform-ibm-cbr`](https://github.com/terraform-ibm-modules/terraform-ibm-cbr){: external} module to define and manage these boundaries as code.
+Encrypting data is essential, but equally important is ensuring that only approved services and networks can reach your key management and secrets infrastructure. {{site.data.keyword.cloud_notm}} Context-Based Restrictions (CBR) let you define rules that restrict which resources can call which services, based on network context. Use the [CBR module](https://github.com/terraform-ibm-modules/terraform-ibm-cbr){: external} to define and manage these boundaries as code.
 
 For teams that also manage encryption keys as code, {{site.data.keyword.cloud_notm}} provides a suite of Terraform IBM Modules that cover the full spectrum of key management needs:
 
 | Use case | Recommended TIM module |
 | --- | --- |
-| Provision {{site.data.keyword.keymanagementserviceshort}} with keys and key rings in one step | [`terraform-ibm-kms-all-inclusive`](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external} |
-| Provision a {{site.data.keyword.keymanagementserviceshort}} instance only | [`terraform-ibm-key-protect`](https://github.com/terraform-ibm-modules/terraform-ibm-key-protect){: external} |
-| Manage individual encryption keys | [`terraform-ibm-kms-key`](https://github.com/terraform-ibm-modules/terraform-ibm-kms-key){: external} |
-| Manage key rings to organize keys | [`terraform-ibm-kms-key-ring`](https://github.com/terraform-ibm-modules/terraform-ibm-kms-key-ring){: external} |
-| Provision {{site.data.keyword.hscrypto}} (dedicated HSM) | [`terraform-ibm-hpcs`](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} |
+| Provision {{site.data.keyword.keymanagementserviceshort}} with keys and key rings in one step | [KMS All-Inclusive module](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external} |
+| Provision a {{site.data.keyword.keymanagementserviceshort}} instance only | [Key Protect module](https://github.com/terraform-ibm-modules/terraform-ibm-key-protect){: external} |
+| Manage individual encryption keys | [KMS Key module](https://github.com/terraform-ibm-modules/terraform-ibm-kms-key){: external} |
+| Manage key rings to organize keys | [KMS Key Ring module](https://github.com/terraform-ibm-modules/terraform-ibm-kms-key-ring){: external} |
+| Provision {{site.data.keyword.hscrypto}} (dedicated HSM) | [HPCS module](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} |
 {: caption="Terraform IBM Modules for key management" caption-side="top"}
 
 
@@ -130,7 +130,7 @@ The first time that an account is configured it is typically done carefully. But
 ### Deploy continuous compliance monitoring as code
 {: #bp-compliance-terraform}
 
-Use the [`terraform-ibm-scc-workload-protection`](https://github.com/terraform-ibm-modules/terraform-ibm-scc-workload-protection){: external} module to provision a pre-configured instance with Cloud Security Posture Management (CSPM) enabled. This ensures your compliance monitoring environment is set up consistently and reproducibly across all accounts.
+Use the [SCC Workload Protection module](https://github.com/terraform-ibm-modules/terraform-ibm-scc-workload-protection){: external} to provision a pre-configured instance with Cloud Security Posture Management (CSPM) enabled. This ensures your compliance monitoring environment is set up consistently and reproducibly across all accounts.
 
 Running an evaluation does not help ensure regulatory compliance. An evaluation provides a point in time statement of your current posture for a specific resource. It is your responsibility to review and interpret the results to help ensure that your organization is adhering to the controls that are required for your industry. 
 {: important}

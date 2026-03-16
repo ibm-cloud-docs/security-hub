@@ -38,7 +38,7 @@ To ensure that your case has a timely resolution, be sure to include the informa
 1. Provide the member configuration name, source URL, source release, and folder from the {{site.data.keyword.bpshort}} log. It should look similar to the following example. 
 
    ```sh
-   2023/04/06 18:11:43 Related Workspace: name=2 - Observability, sourcerelease=(1.0.0), sourceurl=, folder=folder=terraform-ibm-kms-all-inclusive-4.8.5/solutions/standard
+   2023/04/06 18:11:43 Related Workspace: name=2 - Observability, sourcerelease=(1.0.0), sourceurl=, folder=folder=KMS All-Inclusive module-4.8.5/solutions/standard
    ```
    {: screen}
 

@@ -29,9 +29,9 @@ For advanced customization, each member configuration in the architecture corres
 
 | Architecture member | Underlying TIM module |
 | --- | --- |
-| Key management | [`terraform-ibm-kms-all-inclusive`](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external} |
-| Secrets Manager | [`terraform-ibm-secrets-manager`](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} |
-| SCC Workload Protection | [`terraform-ibm-scc-workload-protection`](https://github.com/terraform-ibm-modules/terraform-ibm-scc-workload-protection){: external} |
+| Key management | [KMS All-Inclusive module](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external} |
+| Secrets Manager | [Secrets Manager module](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} |
+| SCC Workload Protection | [SCC Workload Protection module](https://github.com/terraform-ibm-modules/terraform-ibm-scc-workload-protection){: external} |
 {: caption="Architecture members and their underlying Terraform IBM Modules" caption-side="top"}
 
 

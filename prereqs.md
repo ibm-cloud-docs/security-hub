@@ -21,13 +21,13 @@ The Cloud foundation for security and observability deployable architecture is a
 When you deploy the architecture, you can:
 
 * **Implement security**: The architecture provisions security services such as {{site.data.keyword.keymanagementservicelong_notm}} and {{site.data.keyword.secrets-manager_full_notm}} that can help you to manage sensitive data for your organization.
-   * {{site.data.keyword.keymanagementservicelong_notm}} — Automate with Terraform: [terraform-ibm-kms-all-inclusive](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external}
-   * {{site.data.keyword.secrets-manager_full_notm}} — Automate with Terraform: [terraform-ibm-secrets-manager](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external}
+   * {{site.data.keyword.keymanagementservicelong_notm}} — Automate with Terraform: [KMS All-Inclusive module](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external}
+   * {{site.data.keyword.secrets-manager_full_notm}} — Automate with Terraform: [Secrets Manager module](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external}
 
 * **Ensure observability**: The architecture provisions observability services such as {{site.data.keyword.monitoringlong_notm}}, {{site.data.keyword.atracker_full_notm}}, {{site.data.keyword.en_full_notm}}, and log retention through {{site.data.keyword.cos_full_notm}} buckets.
 
 * **Monitor for regulatory compliance**: The architecture helps to ensure regulatory compliance by provisioning {{site.data.keyword.sysdigsecure_full_notm}} to validate the configurations that are made as part of application lifecycle management against the CIS {{site.data.keyword.cloud_notm}} Foundations Benchmark profile. To see the controls that are included, go to the Cloud foundation for security and observability deployable architecture catalog tile in the console and click the **Security & compliance** tab.
-   * {{site.data.keyword.sysdigsecure_full_notm}} — Automate with Terraform: [terraform-ibm-scc-workload-protection](https://github.com/terraform-ibm-modules/terraform-ibm-scc-workload-protection){: external}
+   * {{site.data.keyword.sysdigsecure_full_notm}} — Automate with Terraform: [SCC Workload Protection module](https://github.com/terraform-ibm-modules/terraform-ibm-scc-workload-protection){: external}
 
 ## Before you deploy
 {: #before-deploy-prereq}
