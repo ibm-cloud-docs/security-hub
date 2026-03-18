@@ -47,5 +47,10 @@ Before you can deploy the Cloud foundation for security and observability deploy
 * Optional: Install the {{site.data.keyword.cloud_notm}} CLI Project plug-in by running the `ibmcloud plugin install project` command. For more information, see the [Project CLI reference](/docs/cli?topic=cli-projects-cli).
 * Optional: Familiarize yourself with the [Customization options](/docs/security-hub?topic=security-hub-customize-css).
 
+## Using Terraform IBM Modules
+{: #using-tim}
+
+When you use Terraform to deploy infrastructure on {{site.data.keyword.cloud_notm}}, you can use [Terraform IBM Modules (TIM)](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) to streamline your deployments. TIM is a collection of pre-built, tested, and validated Terraform modules that follow {{site.data.keyword.cloud_notm}} best practices.
+
 You might see notifications in {{site.data.keyword.cloud_notm}} projects that new versions of a configuration are available. You can ignore these messages because they do not prevent you from deploying the stack. No specific action is required from you. These notifications are expected, as we are rapidly iterating on the development of the underlying components. As new stack versions become available, the versions of the underlying components are also updated.
 {: tip}
