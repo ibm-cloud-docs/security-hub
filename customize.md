@@ -26,6 +26,7 @@ Each member in the deployable architecture stack includes several input paramete
 To edit the member configuration, select **Edit** from the Options icon ![Options icon](../icons/action-menu-icon.svg "Options") in the member configuration row of your project.
 
 
+
 ## Managing inputs and outputs
 {: #customize-manage-vars}
 
