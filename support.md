@@ -23,7 +23,6 @@ If you experience an issue or have questions when you deploy the Cloud foundatio
 - Review the [FAQs](/docs/security-hub?topic=security-hub-faqs).
 - ![{{site.data.keyword.cloud_notm}} icon](../icons/ibm-cloud-16.svg "IBM Cloud icon") Check the status of the {{site.data.keyword.cloud_notm}} platform and resources by going to the [Status page](https://cloud.ibm.com/status){: external}.
 - ![GitHub icon](../icons/logo-github-16.svg "GitHub icon") Review the [GitHub issues](https://github.com/terraform-ibm-modules/stack-ibm-core-security-services/issues){: external} to see whether other users experienced the same problem.
-- ![GitHub icon](../icons/logo-github-16.svg "GitHub icon") If the issue is related to a specific service, review the GitHub issues for the corresponding [Terraform IBM Module](https://github.com/terraform-ibm-modules){: external}. Each module repository maintains its own issue tracker and changelog, which can help you identify whether a known issue exists for the version in use. You can also find each module on the [Terraform Registry](https://registry.terraform.io/namespaces/terraform-ibm-modules){: external}.
 
 
 If you are unable to resolve the issue, open a support case. For more information, see [Creating support cases](/docs/account?topic=account-open-case). If you're looking to provide feedback, see [Submitting feedback](/docs/overview?topic=overview-feedback).
