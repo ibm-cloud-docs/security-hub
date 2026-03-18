@@ -29,13 +29,13 @@ For example, consider the following scenarios to learn about how they map to sec
 
 The following table lists the different offerings that you can use with {{site.data.keyword.cloud_notm}} to protect your application secrets.
 
-| Scenario | What to use | Terraform IBM Module |
-| --- | --- | --- |
-| As a DevOps team contributor, you need to create, lease, and manage API keys, credentials, database configurations, and other secrets for your services and applications. | With **[{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager)**, you can manage secrets of various types in a dedicated instance. | [Secrets Manager module](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} |
-| You need to generate, renew, and manage SSL/TLS certificates for your deployments. | You can also manage your SSL/TLS certificates and private keys in a dedicated instance of **[{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager)**. | [Secrets Manager module](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} |
-| You need to create and manage encryption keys that are backed by FIPS 140-2 Level 3 validated hardware. | You can use **[{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect)** to generate and import encryption keys by using a multi-tenant service with shared hardware. | [Key Protect module](https://github.com/terraform-ibm-modules/terraform-ibm-key-protect){: external} |
-| You are an admin in an industry, such as finance or legal, that must adhere to governance over how data is protected and isolated. You need to create and manage encryption keys by using a dedicated, FIPS 140-2 Level 4 hardware security module that you control and manage. | With **[{{site.data.keyword.hscrypto}}](/docs/hs-crypto)**, you can manage encryption keys in a single-tenant service with dedicated hardware. | [HPCS module](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} |
-| You need a way to offload TLS handshake encryption to a dedicated, FIPS 140-2 Level 4 hardware security module that you control and manage. | You can also use **[{{site.data.keyword.hscrypto}}](/docs/hs-crypto)** to control your TLS/SSL keys in a dedicated HSM. | [HPCS module](https://github.com/terraform-ibm-modules/terraform-ibm-hpcs){: external} |
+| Scenario | What to use |
+| --- | --- |
+| As a DevOps team contributor, you need to create, lease, and manage API keys, credentials, database configurations, and other secrets for your services and applications. | With **[{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager)**, you can manage secrets of various types in a dedicated instance. |
+| You need to generate, renew, and manage SSL/TLS certificates for your deployments. | You can also manage your SSL/TLS certificates and private keys in a dedicated instance of **[{{site.data.keyword.secrets-manager_short}}](/docs/secrets-manager)**. |
+| You need to create and manage encryption keys that are backed by FIPS 140-2 Level 3 validated hardware. | You can use **[{{site.data.keyword.keymanagementserviceshort}}](/docs/key-protect)** to generate and import encryption keys by using a multi-tenant service with shared hardware. |
+| You are an admin in an industry, such as finance or legal, that must adhere to governance over how data is protected and isolated. You need to create and manage encryption keys by using a dedicated, FIPS 140-2 Level 4 hardware security module that you control and manage. | With **[{{site.data.keyword.hscrypto}}](/docs/hs-crypto)**, you can manage encryption keys in a single-tenant service with dedicated hardware. |
+| You need a way to offload TLS handshake encryption to a dedicated, FIPS 140-2 Level 4 hardware security module that you control and manage. | You can also use **[{{site.data.keyword.hscrypto}}](/docs/hs-crypto)** to control your TLS/SSL keys in a dedicated HSM. |
 {: caption="Data protection scenarios" caption-side="top"}
 
 ## What are the key secret types supported by each data protection service?
