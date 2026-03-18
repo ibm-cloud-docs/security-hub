@@ -54,6 +54,8 @@ To create a configuration, set your variables.
    * Select the pricing plans for {{site.data.keyword.secrets-manager_short}} and {{site.data.keyword.compliance_short}}. While these fields are optional, they are required if you are building the sample app.
 1. Click **Save**. After the input values are validated, the button changes to **View stack configurations**.
 
+You can also use Terraform directly to deploy stacked architectures by leveraging [Terraform IBM Modules (TIM)](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim). For example implementations, see the [stack-ibm-retrieval-augmented-generation](https://github.com/terraform-ibm-modules/stack-ibm-retrieval-augmented-generation){: external} repository, which demonstrates how to use TIM modules to build and deploy solution stacks on {{site.data.keyword.cloud_notm}}.
+{: tip}
 
 ## Validating and deploying the architecture
 {: #deploy-validate}
