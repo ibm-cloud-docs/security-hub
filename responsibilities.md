@@ -73,7 +73,6 @@ Security and regulation compliance includes tasks such as security controls impl
 
 For more information about the general Security and regulation compliance responsibilities when you use deployable architectures, see [Security and regulation compliance](/docs/secure-enterprise?topic=secure-enterprise-responsibilities-deployable-architectures#security-compliance-da).
 
-
 ## Disaster recovery
 {: #disaster-recovery}
 
