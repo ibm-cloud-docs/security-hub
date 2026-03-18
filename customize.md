@@ -25,15 +25,6 @@ Each member in the deployable architecture stack includes several input paramete
 
 To edit the member configuration, select **Edit** from the Options icon ![Options icon](../icons/action-menu-icon.svg "Options") in the member configuration row of your project.
 
-For advanced customization, each member configuration in the architecture corresponds to an underlying [Terraform IBM Module (TIM)](https://cloud.ibm.com/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim){: external}. Reviewing the module's documentation on the [Terraform Registry](https://registry.terraform.io/namespaces/terraform-ibm-modules){: external} or on GitHub gives you a complete list of all available input variables, their default values, and usage examples — which can help you make informed decisions when editing a member configuration.
-
-| Architecture member | Underlying TIM module |
-| --- | --- |
-| Key management | [KMS All-Inclusive module](https://github.com/terraform-ibm-modules/terraform-ibm-kms-all-inclusive){: external} |
-| Secrets Manager | [Secrets Manager module](https://github.com/terraform-ibm-modules/terraform-ibm-secrets-manager){: external} |
-| SCC Workload Protection | [SCC Workload Protection module](https://github.com/terraform-ibm-modules/terraform-ibm-scc-workload-protection){: external} |
-{: caption="Architecture members and their underlying Terraform IBM Modules" caption-side="top"}
-
 
 ## Managing inputs and outputs
 {: #customize-manage-vars}
