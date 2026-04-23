@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024, 2026
-lastupdated: "2026-04-15"
+lastupdated: "2026-04-23"
 
 keywords: security services, deployable architecture, IaC
 
@@ -108,7 +108,6 @@ Version 3.0.0 of the Cloud foundation for security and observability deployable 
       - This solution will no longer provision an instance of the Security and Compliance Center service as it has been deprecated and new instances cannot be provisioned after 17th July 2025.
       - The solution will now provision a new instance of [App Configuration](/docs/app-configuration?topic=app-configuration-getting-started) and [Security and Compliance Center Workload Protection](/docs/workload-protection?topic=workload-protection-getting-started) with [Cloud Security Posture Management (CSPM)](/docs/workload-protection?topic=workload-protection-about) enabled by default.
       - If you are upgrading from a previous version of the solution, you will continue to see the member named `4a - Security and Compliance Center` so that you can decide when you want to delete the Security and Compliance Center instance and associated Object Storage bucket. Please be aware that this config also has an instance of Security and Compliance Center Worklaod Protection deployed as part of it, however it is not enabled with Cloud Security Posture Management (CSPM) and is safe to delete as the new instance that is now created by the solution will be used going forward.
-      - For more information, see [Security and Compliance Center transition](/docs/security-compliance?topic=security-compliance-scc-transition).
    - The service to service authorization that is used to allow the ATracker service write to Object Storage has been updated so that the scope of the policy is scoped to the exact Object Storage bucket.
       - If upgrading from an older version, you will see the old authorization policy being deleted, a new ones being created. The new one is created before the old one is deleted to prevent any disruption to every day services.
 

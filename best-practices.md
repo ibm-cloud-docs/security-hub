@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-08-19"
+lastupdated: "2026-04-23"
 
 keywords: security services, deployable architecture, IaC
 
@@ -28,7 +28,7 @@ Helping ensure the proper configuration of IAM policies is one of the greatest f
 ## Take advantage of access groups
 {: #bp-groups}
 
-Through the Identity and Access Management service, you can add the users or resources in your account to access groups based on role or required permissions. By using these groups, you can minimize the number of necessary policies that you need to assign and manage in your account. For example, if your team project uses the same resources, you can create a group and assign permissions to the group rather than to each individual. For help with getting started, see [Creating access groups](/docs/account?topic=account-groups).
+Through the Identity and Access Management service, you can add the users or resources in your account to access groups based on role or required permissions. By using these groups, you can minimize the number of necessary policies that you need to assign and manage in your account. For example, if your team project uses the same resources, you can create a group and assign permissions to the group rather than to each individual. For help with getting started, see [Creating access groups](/docs/iam?topic=iam-groups).
 
 Does a user need this permission for a short time period? It might be better practice to use a trusted profile. [Learn more](/docs/enterprise-management?topic=enterprise-management-access-enterprises#bp-enterprise-access-include-compare-accessgroups-trustedprofiles).
 {: tip}
@@ -41,7 +41,7 @@ The best way to control access to the resources and service IDs in your account 
 ## Enforce MFA
 {: #bp-mfa}
 
-While multifactor authentication is typically a choice made by each organization, more compliance regulations are requiring it. Be sure that you know which standards and regulations that your organization is required to be in compliance with. To configure MFA, you can create a settings template that defines the level of MFA that you want your company to follow. Then, assign the settings template to all account groups. Learn more about [Setting up Multifactor authentication](/docs/account?topic=account-enablemfa).
+While multifactor authentication is typically a choice made by each organization, more compliance regulations are requiring it. Be sure that you know which standards and regulations that your organization is required to be in compliance with. To configure MFA, you can create a settings template that defines the level of MFA that you want your company to follow. Then, assign the settings template to all account groups. Learn more about [Setting up Multifactor authentication](/docs/iam?topic=iam-enablemfa).
 
 
 ## Encrypt the data in your account

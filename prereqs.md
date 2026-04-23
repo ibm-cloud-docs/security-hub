@@ -2,7 +2,7 @@
 
 copyright:
   years: 2024
-lastupdated: "2025-09-01"
+lastupdated: "2026-04-23"
 
 keywords: security services, deployable architecture, IaC
 
@@ -37,7 +37,7 @@ Before you can deploy the Cloud foundation for security and observability deploy
    {: tip}
 
 * The required level of access to deploy and manage resources in the account.
-* An [{{site.data.keyword.cloud_notm}} API Key](/docs/account?topic=account-userapikey&interface=ui#create_user_key) in the target account with the suffienct permissions. Be sure to save the API key value for a later configuration.
+* An [{{site.data.keyword.cloud_notm}} API Key](/docs/iam?topic=iam-userapikey&interface=ui#create_user_key) in the target account with the suffienct permissions. Be sure to save the API key value for a later configuration.
 
    * **Evaluation environments**: If your environment is used for evaluating, grant the Administrator role on the **IAM Identity Service**, **All Identity and Access enabled services**, **Cloud Logs** and **All Account Management** services.
    * **Production environments**: If your environment is used for production resources, restrict access to the minimum permissions level as indicated in the **Permissions** tab of the details page of the deployable architecture catalog entry.
