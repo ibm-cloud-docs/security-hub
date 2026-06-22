@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2025-10-13"
+  years: 2024, 2026
+lastupdated: "2026-06-22"
 
 keywords: security services, deployable architecture, IaC
 
@@ -54,6 +54,7 @@ To create a configuration, set your variables.
    * Select the pricing plans for {{site.data.keyword.secrets-manager_short}} and {{site.data.keyword.compliance_short}}. While these fields are optional, they are required if you are building the sample app.
 1. Click **Save**. After the input values are validated, the button changes to **View stack configurations**.
 
+This architecture is built on pre-built, open-source, and enterprise-ready [Terraform IBM Modules (TIM)](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) from the [Cloud foundation for security and observability deployable architecture GitHub repository](https://github.com/terraform-ibm-modules/stack-ibm-core-security-services){: external}.
 
 ## Validating and deploying the architecture
 {: #deploy-validate}

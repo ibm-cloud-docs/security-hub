@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2025-09-01"
+  years: 2024, 2026
+lastupdated: "2026-06-22"
 
 keywords: security services, deployable architecture, IaC
 
@@ -31,6 +31,12 @@ A deployable architecture is a combination of capabilities from one or more tech
 Infrastructure as code (IaC) is code to manage and provision infrastructure (for example, networks, virtual machines, load-balancers, clusters, services, and connection topology) in a descriptive model rather than by using manual processes.
 
 With IaC, code defines your infrastructure, specifying your resources and their configuration. Your infrastructure code is treated the same as app code so that you can apply DevOps core practices such as version control, testing, and continuous monitoring. The Cloud foundation for security and observability deployable architecture use [Terraform](https://developer.hashicorp.com/terraform){: external} to specify the infrastructure and [{{site.data.keyword.bplong_notm}}](/docs/schematics?topic=schematics-getting-started) to manage the deployment.
+
+## Can I use Terraform IBM Modules to deploy or extend this architecture?
+{: #what-is-tim}
+{: faq}
+
+Yes, you can use pre-built, open-source, and enterprise-ready [Terraform IBM Modules (TIM)](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim) to deploy or extend this architecture using the Cloud foundation for security and observability deployable architecture. If you want to deploy individual components of the architecture independently, or extend the architecture with additional services, you can reference these modules directly in your own Terraform configurations. Browse the full module catalog on the [Terraform Registry](https://registry.terraform.io/namespaces/terraform-ibm-modules){: external}.
 
 ## How do I estimate costs?
 {: #what-is-project-cost}
