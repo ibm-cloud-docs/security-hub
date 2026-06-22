@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2026-04-23"
+  years: 2024, 2026
+lastupdated: "2026-06-22"
 
 keywords: security services, deployable architecture, IaC
 
@@ -46,6 +46,8 @@ Before you can deploy the Cloud foundation for security and observability deploy
 
 * Optional: Install the {{site.data.keyword.cloud_notm}} CLI Project plug-in by running the `ibmcloud plugin install project` command. For more information, see the [Project CLI reference](/docs/cli?topic=cli-projects-cli).
 * Optional: Familiarize yourself with the [Customization options](/docs/security-hub?topic=security-hub-customize-css).
+
+The Cloud foundation for security and observability deployable architecture is built on [Terraform IBM Modules (TIM)](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim), {{site.data.keyword.IBM_notm}}-maintained Terraform modules. The architecture source is available in the [Cloud foundation for security and observability deployable architecture GitHub repository](https://github.com/terraform-ibm-modules/stack-ibm-core-security-services){: external} if you want to review or extend the underlying modules.
 
 You might see notifications in {{site.data.keyword.cloud_notm}} projects that new versions of a configuration are available. You can ignore these messages because they do not prevent you from deploying the stack. No specific action is required from you. These notifications are expected, as we are rapidly iterating on the development of the underlying components. As new stack versions become available, the versions of the underlying components are also updated.
 {: tip}

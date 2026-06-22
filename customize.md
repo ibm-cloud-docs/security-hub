@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2024
-lastupdated: "2025-09-01"
+  years: 2024, 2026
+lastupdated: "2026-06-22"
 
 keywords: security services, deployable architecture, IaC
 
@@ -46,3 +46,5 @@ You can remove a member configuration from the stack that other configurations d
 - {{site.data.keyword.secrets-manager_short}}
 
 To remove a member configuration, select **Remove from Stack** from the Options icon ![Options icon](../icons/action-menu-icon.svg "Options") in the member configuration row.
+
+For deeper customization beyond what the UI allows, you can reference the underlying Terraform modules directly from the [Cloud foundation for security and observability deployable architecture](https://github.com/terraform-ibm-modules/stack-ibm-core-security-services){: external}. For an overview of the module library, see [About Terraform IBM Modules](/docs/ibm-cloud-provider-for-terraform?topic=ibm-cloud-provider-for-terraform-about-tim).
