@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2020, 2025
-lastupdated: "2025-05-02"
+  years: 2020, 2026
+lastupdated: "2026-06-25"
 
 keywords: secrets management in IBM Cloud, differences between {{site.data.keyword.secrets-manager_short}} and Key Protect, when to use {{site.data.keyword.secrets-manager_short}}, {{site.data.keyword.secrets-manager_short}} use cases, single tenant, multi-tenant
 
@@ -22,7 +22,9 @@ With {{site.data.keyword.cloud_notm}}, you can choose from various secrets manag
 
 For example, consider the following scenarios to learn about how they map to secrets management offerings and data protection offerings in {{site.data.keyword.cloud_notm}}.
 
-![The image describes three use cases for secrets management and how they map to available services in {{site.data.keyword.cloud_notm}}. The content is explained fully in the surrounding text.](/images/secrets-mgmt-options.svg){: caption="Figure 1. Secrets management use cases" caption-side="bottom"}
+![The image describes three use cases for secrets management and how they map to available services in {{site.data.keyword.cloud_notm}}. The content is explained fully in the surrounding text.](/images/secrets-mgmt-options.svg){: caption="Secrets management use cases" caption-side="bottom"}
+
+The diagram shows three secrets management use cases and the {{site.data.keyword.cloud_notm}} service recommended for each. If you want to manage secrets and credentials to access resources, use **{{site.data.keyword.secrets-manager_short}}**. If you want to manage symmetric keys to encrypt data at rest, use **{{site.data.keyword.keymanagementserviceshort}}** or **{{site.data.keyword.hscrypto}}**. If you want to manage SSL/TLS certificates to secure data in transit, use **{{site.data.keyword.secrets-manager_short}}**.
 
 ## Which data protection service is best for you?
 {: #which-data-protection-service}
